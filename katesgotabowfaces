@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+ 
+<!----------------------
+ 
+        CHARACTER MASTERLIST #5 by JAKEHELPS
+                #1: Do not redistribute & claim as your own.
+                #2: Do not remove the credit.
+ 
+                ---------------------------->
+               
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ 
+<title>{Title}</title>
+<link rel="descriptioncut icon" href="{Favicon}" />
+ 
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+ 
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#vertical div.wrap").hover(function(){
+        $(this).stop().animate({top:"-260px"},{queue:false,duration:300});
+    }, function() {
+        $(this).stop().animate({top:"0px"},{queue:false,duration:300});
+    });
+});
+ 
+$(document).ready(function() {
+        $('.type-1').click(function() {
+                $('.character-type-1').fadeTo('slow', 1);
+                $('.character-type-2').fadeTo('slow', 0.1);
+                $('.character-type-3').fadeTo('slow', 0.1);
+        });
+        $('.type-2').click(function() {
+                $('.character-type-2').fadeTo('slow', 1);
+                $('.character-type-1').fadeTo('slow', 0.1);
+                $('.character-type-3').fadeTo('slow', 0.1);
+        });
+        $('.type-3').click(function() {
+                $('.character-type-3').fadeTo('slow', 1);
+                $('.character-type-1').fadeTo('slow', 0.1);
+                $('.character-type-2').fadeTo('slow', 0.1);
+        });
+        $('.type-4').click(function() {
+                $('.character-type-1').fadeTo('slow', 1);
+                $('.character-type-2').fadeTo('slow', 1);
+                $('.character-type-3').fadeTo('slow', 1);
+        });
+});
+ 
+ 
+</script>
+ 
+</head>
+<style type="text/css">
+body {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #FFFFFF;
+        background-attachment: fixed;
+        background-image:url('http://freeseamlesstextures.com/images/31-purple-paper-background-lrg.jpg');
+        margin-bottom: 50px;
+}
+ 
+ 
+.title {
+        text-align:center;
+        font-family: fjalla one;
+        font-size: 26px;
+        color: #FFFFFF;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+    height:10px;
+    background-color: #303030; }
+   
+::-webkit-scrollbar-thumb:horizontal {
+    height:30px;
+    background-color: #303030; }
+   
+::-webkit-scrollbar {
+    height: 10px;
+    width: 4px;
+    background-color: #505050; }
+ 
+.clear {
+        clear: both;
+}
+ 
+#vertical {
+        margin:50px auto;
+        width:920px;
+        margin-bottom: 60px;
+}
+ 
+#vertical div.element {
+        margin-right: 5px;
+        margin-top: 5px;
+        float: left;
+        width: 220px;
+        height: 260px;
+        border: 1px solid #303030;
+        position: relative;
+        overflow: hidden;
+}
+ 
+.wrap {
+        display: block;
+        height: 390px;
+        width: 220px;
+        position: absolute;
+        top: 0;
+}
+ 
+.portrait img {
+        display: block;
+        height: 260px;
+        width: 220px;
+        background-color: #202020;
+}
+ 
+.description {
+        display: block;
+        height: 260px;
+        width: 220px;
+        background-color: #202020;
+        font-family: cambria;
+        font-size: 12px;
+        color: #CCCCCC;
+        padding: 5px;
+        overflow: auto;
+}
+ 
+.description a {
+        display: block;
+        padding: 5px;
+        color: #FFFFFF;
+        background-color: #303030;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+}
+ 
+.navigation {
+        text-align: center;
+        margin-bottom: 20px;
+}
+ 
+.navigation a {
+        padding: 10px 20px;
+        background-color: #303030;
+        border: 1px solid #202020;
+        font-family: cambria;
+        font-size: 12px;
+        color: #CCCCCC;
+        margin-right: 5px;
+        text-decoration: none;
+        cursor: pointer;
+}
+ 
+ 
+ 
+ 
+</style>
+<body>
+<div id="vertical" class="clear">
+    <div class="title">FACE CLAIMS</div>
+        <div class="navigation">
+                <a href="/">home</a>
+                <a href="/ask">ask</a>
+                <a href="/navigation">navigation</a>
+                <a href="/about-me">about me</a>
+                <a href="http://jakehelps.tumblr.com">&copy;</a>
+        </div>
+   
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i43.tinypic.com/sem1ya.jpg" /></div>
+            <div class="description">
+                        FC: Kennedi Clements
+                        <br>
+                        <br>
+                        Ages 4-8
+                        <a href="/about-me">Kid!Kate</a>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i42.tinypic.com/95ucmd.jpg" /></div>
+            <div class="description">
+                        FC: Emily Rudd
+                        <br>
+                        <br>
+                        Ages: 12-17
+                        <a href="/about-me">Younger!Kate</a>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 3 ------>
+<div class="character-type-3">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i44.tinypic.com/2s76xlg.jpg" /></div>
+            <div class="description">
+                        FC: Ksenia Solo
+                        <br>
+                        <br>
+                        Ages: 17-25
+                        <a href="/about-me">Normal!Kate</a>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i44.tinypic.com/nnmn21.jpg" /></div>
+            <div class="description">
+                        FC: Eva Green
+                        <br>
+                        <br>
+                        Ages: 25-37
+                        <a href="/about-me">Older!Kate</a>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i39.tinypic.com/2nhp5dh.jpg" /></div>
+            <div class="description">
+                        FC: Claudia Black
+                        <br>
+                        <br>
+                        Ages: 37-46
+                        <a href="/about-me">Eldest!Kate</a>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 3 ------>
+<div class="character-type-3">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i44.tinypic.com/2po5u1u.jpg" /></div>
+            <div class="description">
+                        FC: Drew Roy
+                        <br>
+                        <br>
+                        Ages: 17-25
+                        <a href="/about-me">GB!Kate (Cade)</a>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i44.tinypic.com/dqpto0.jpg" /></div>
+            <div class="description">
+                        FC: Craig Olejnik
+                        <br>
+                        <br>
+                        Ages: 25-37
+                        <a href="/about-me">Older!Cade (GB)</a>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
