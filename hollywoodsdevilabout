@@ -1,0 +1,742 @@
+<!-----------------------------------------------------------------------
+About Page [07]: Rogue
+Made by glenthemes
+
+Initial release: 2018/11/07
+Last updated: 2019/02/02
+
+TERMS OF USE:
+1) Do not remove the theme credit.
+2) Do not repost/redistribute my themes.
+3) Do not take parts of the code and use it as your own.
+4) Do not use my themes as a base code.
+5) Do not mix my themes together.
+
+Please stick to the Terms! Thank you! :D
+Here is the help guide!
+↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+https://glenthemes.tumblr.com/rogue
+------------------------------------------------------------------------>
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+ 
+<title>{Title}</title>
+ 
+<link rel="shortcut icon" href="{Favicon}">
+
+<!--------------------JAVASCRIPTS-------------------->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:25,
+tip_fade_speed:60,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Meddon" rel="stylesheet">
+
+<link href="//dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" rel="stylesheet">
+
+<script src="//static.tumblr.com/gtjt4bo/QRmphdsdv/glenplayer02.js"></script>
+ 
+<!-------------------------------------------------------------------->
+ 
+<style type="text/css">
+ 
+/*--------------------TOOLTIPS--------------------*/
+#s-m-t-tooltip {
+    padding: 5px 9px;
+    margin: 20px;
+    background-color:#001b2f; /* tooltip background color */
+    border:1px solid #000000; /* tooltip border color */
+    font-family: Cinzel;
+    font-size: calc(12px - 3px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffeff0; /* tooltip text color */
+    z-index:9999!important;
+    max-width:300px;
+}
+ 
+/*--------------------TUMBLR CONTROLS--------------------*/
+iframe#tumblr_controls, .iframe-controls--desktop {
+    top:5px!important;
+    right:5px!important;
+    position:fixed!important;
+    opacity:0.4;
+    
+    transform:scale(0.8,0.8);
+    -webkit-transform:scale(0.8,0.8);
+    -moz-transform:scale(0.8,0.8);
+    -o-transform:scale(0.8,0.8);
+    
+    transform-origin:100% 0;
+    z-index:999999!important;
+    transition:0.15s ease-in-out;
+}
+
+iframe#tumblr_controls:hover, .iframe-controls--desktop:hover {
+    opacity:1;
+}
+ 
+/*--------------------TEXT HIGHLIGHT--------------------*/
+::selection {
+background:#000;
+color:#c40002;
+}
+ 
+::-moz-selection {
+background:#000;
+color:#c40002;
+}
+ 
+/*--------------------BASICS--------------------*/
+body {
+    background:#000;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#888;
+    cursor:normal;
+    font-family:Cinzel;
+    line-height:1.6em;
+    font-size:12px;
+    text-align:left;
+    overflow:hidden;
+}
+ 
+blockquote {
+    padding-left:10px;
+    margin-left:5px;
+    border-left:1px solid;
+    border-color:#fb9d28;
+    margin:10px;
+}
+
+a, .th {
+    text-decoration:none;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+
+a {
+    color:#ffeff0; /* links color */
+}
+
+b, strong {
+    font-weight:bold;
+    color:#ffeff0; /* bolded text color */
+}
+
+i, em {color:#ffeff0;} /* italicized text color */
+
+pre, code {
+    white-space:pre-wrap;
+    display:block;
+}
+
+hr {
+    width:70%;
+    border-width:0px;
+    height:1px;
+    background-color:#fb9d28;
+}
+ 
+/*--------------------CONTAINER--------------------*/
+#bigwrap {
+    position:fixed;
+    margin:0 auto;
+    top:0;left:0;right:0;
+    width:max-content;
+    width:-moz-max-content;
+    height:100vh;
+    display:table;
+}
+
+#bigmid {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#box {
+    width:inherit;
+    height:455px;
+    padding:25px;
+    background-color:#001b2f; /* main container box background color */
+    border:1px solid #fb9d28; /* main container box border */
+}
+
+/*--------------------TOP SECTION--------------------*/
+#topflex {display:flex;}
+
+#topflex > div {
+    align-self:center;
+    -webkit-align-self:center;
+}
+
+.toptitle {
+    font-family:Meddon;
+    font-size:19px;
+    text-transform:lowercase;
+    letter-spacing:1px;
+    color:#ffeff0; /* top left title color */
+    line-height:1.2em;
+}
+
+.topbar {
+    flex:1;
+    margin:auto 10px;
+    width:100%;
+    height:1px;
+    background-image:linear-gradient(to left,transparent,#fb9d28,#ffeff0,transparent); /* top bar gradient */
+}
+
+/* top right navigation links */
+.topnav {display:flex;}
+
+.topnav a {margin:0 5px;}
+
+.topnav a:first-child {margin-left:0px;}
+.topnav a:last-child {margin-right:0px;}
+
+.topnav .th {
+    padding:10px;
+    font-size:12px;
+    background-color:#c40002; /* top right navigation icons background */
+    border-radius:15%;
+    color:#ffeff0; /* top right navigation icons color */
+}
+
+.topnav .th:hover {
+    background-color:#fb9d28; /* top right nav icons background hover */
+    color:#000; /* top right nav icons color hover */
+}
+
+/*--------------------MAIN CONTENT--------------------*/
+#mainflex {
+    margin-top:25px;
+    width:inherit;
+    height:calc(100% - 54px);
+    display:flex;
+}
+
+/*--------------------MAIN: LEFT--------------------*/
+.leftcont {
+    width:270px;
+    height:400px;
+    align-self:center;
+    -webkit-align-self:center;
+}
+
+.sbimg {
+    width:calc(100% - 16px);
+    height:calc(100% - 16px);
+    padding:8px;
+    background-color:#ffeff0; /* sidebar image background / padding color */
+}
+
+/*-------MUSIC PLAYER-------*/
+.music-cont {
+    position:absolute;
+    margin-top:calc(-42px - 8px);
+    margin-left:8px;
+    width:calc(270px - 32px - 16px);
+    padding:12px 16px;
+    background:rgba(0,27,47, 0.5); /* music player background color */
+    /* use color-hex.com to convert hex codes to rgb values */
+    /* the 'a' in 'rgba' is the opacity */
+}
+
+#glenplayer02 {display:flex;}
+
+#glenplayer02 > div {
+   align-self:center;
+   -webkit-align-self:center;
+}
+
+.music-controls {
+   user-select:none;
+   -webkit-user-select:none;
+   cursor:pointer;
+}
+
+.playy, .pausee {color:#fb9d28;} /* color of play & pause buttons */
+
+.playy {font-size:13px;}
+
+.pausee {
+   display:none;
+   margin-right:2.3px;
+}
+
+.sonata {
+   margin-left:10px;
+   color:#fb9d28; /* color of music note symbol */
+}
+
+.labeltext {
+   margin-left:8px;
+   font-family:Cinzel;
+   text-transform:uppercase;
+   letter-spacing:1px;
+   color:#fb9d28; /* color of song title */
+}
+
+/*--------------------MAIN: RIGHT--------------------*/
+.rightcont {
+    margin-left:25px;
+    width:430px;
+}
+
+/* small title */
+.smalltit {
+    font-family:cinzel;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2.5px;
+    color:#ffeff0; /* small title text color */
+}
+
+.titflex {
+    display:flex;
+    margin-top:7px;
+}
+
+/* big title */
+.bigtit {
+    font-family:cinzel;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:2.5px;
+    color:#ffeff0; /* big title text color */
+}
+
+/* flashing text input underline */
+.input {
+    align-self:flex-end;
+    -webkit-align-self:flex-end;
+    margin-bottom:-2px;
+    margin-left:2px;
+    width:13px;
+    height:2px;
+    background-color:#ffeff0; /* flashing input line color */
+    animation: flashing 1s step-start 0s infinite;
+    -webkit-animation: flashing 1s step-start 0s infinite;
+    -moz-animation: flashing 1s step-start 0s infinite;
+}
+ 
+@keyframes flashing {
+    50% {opacity:0;}
+}
+ 
+@-webkit-keyframes flashing {
+    50% {opacity:0;}
+}
+ 
+@-moz-keyframes flashing {
+    50% {opacity:0;}
+}
+
+/* quote box */
+#quotecont {
+    margin-top:25px;
+    width:100%;
+    display:flex;
+}
+
+.quote {
+    width:calc(320px - 25px);
+    padding:14px 18px;
+    border-left:1px solid #c40002; /* quote box border color */
+    font-family:meddon;
+    font-size:14px;
+    text-transform:lowercase;
+    letter-spacing:1px;
+    color:#ffeff0; /* quote text color */
+    text-align:center;
+}
+
+.q-topleft, .q-botleft, .q-topright, .q-right1, .q-right2, .q-botright, .arrow1, .arrow2 {
+    background:#c40002; /* quote box border color */
+}
+
+.q-right1, .q-right2 {height:20px;} /* height of quote borders on right */
+
+.arrow1, .arrow2 {height:10px;} /* quote arrow size */
+
+/* pls do not touch the sections below unless you know what you're doing */
+.quote p:last-child {margin-bottom:0px;}
+
+.q-topleft {
+    position:absolute;
+    width:10px;
+    height:1px;
+}
+
+.q-botleft {
+    margin-top:-1px;
+    width:10px;
+    height:1px;
+}
+
+.q-topright {
+    float:right;
+    width:10px;
+    height:1px;
+}
+
+.yakisoba {display:flex;}
+
+.q-right1 {width:1px;}
+
+.q-right2 {
+    position:absolute;
+    align-self:flex-end;
+    -webkit-align-self:flex-end;
+    width:1px;
+}
+
+.q-botright {
+    float:right;
+    margin-top:-1px;
+    width:10px;
+    height:1px;
+}
+
+.kimchi {display:flex;}
+
+.arrow1 {
+    align-self:flex-start;
+    -webkit-align-self:flex-start;
+    margin-left:-1px;
+    margin-top:19.5px;
+    width:1px;
+    transform-origin:100% 0;
+    transform:rotate(-68deg);
+    -webkit-transform:rotate(-68deg);
+    -moz-transform:rotate(-68deg);
+    -o-transform:rotate(-68deg);
+}
+
+.arrow2 {
+    position:absolute;
+    align-self:flex-end;
+    -webkit-align-self:flex-end;
+    margin-left:8px;
+    margin-top:-12.5px;
+    width:1px;
+    transform-origin:100% 0;
+    transform:rotate(70deg);
+    -webkit-transform:rotate(70deg);
+    -moz-transform:rotate(70deg);
+    -o-transform:rotate(70deg);
+}
+
+/* quote icon */
+.q-icon {
+    float:right;
+    margin-top:calc(-64px - 5px + 9px);
+    width:64px;
+    height:64px;
+    padding:5px;
+    background-color:#ffeff0; /* quote icon image background / padding color */
+    border-radius:10%;
+}
+
+#bioflex {
+    margin-top:25px;
+    height:259px;
+    display:flex;
+}
+
+#bioflex > div {
+    align-self:center;
+    -webkit-align-self:center;
+}
+
+#mcnugget {width:200px;}
+
+/* stats box */
+#statsbox {
+    height:max-content;
+    height:-moz-max-content;
+    padding:14px 15px;
+    border:1px solid #fb9d28; /* statistics box border */
+    font-family:Cinzel;
+    font-size:10px;
+    color:#ffeff0; /* statistics normal text color */
+}
+
+#statsbox name {
+    margin-right:5px;
+    font-family:Cinzel;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#ffeff0; /* statistics name color */
+}
+
+/* custom links */
+#customlinks {
+    margin-top:calc(25px - 8px);
+    margin-left:-2.5px;
+    width:calc(100% + 10px);
+}
+
+#customlinks a {
+    display:inline-block;
+    margin:4px 2.7px;
+    width:80px;
+    padding:4px 8px;
+    background-color:#c40002; /* custom links background color */
+    font-family:cinzel;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#ffeff0; /* custom links color */
+    text-align:center;
+}
+
+#customlinks a:hover {
+    background-color:#84fae2; /* custom links background color on hover */
+    color:#111; /* custom links color on hover */
+}
+
+
+/* biography box section */
+#biosect {
+    margin-top:15px;
+    margin-left:25px;
+    width:212px;
+}
+
+.biotit {
+    padding:8px 10px;
+    background-color:#c40002; /* biography title background color */
+    font-family:cinzel;
+    font-size: 14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#ffeff0; /* biography title text color */
+    text-align:center;
+}
+
+.bio {
+    margin-top:10px;
+    padding:12px 15px;
+    border:1px solid #fb9d28; /* biography text box border */
+    font-family:Cinzel;
+    font-size:11px;
+    color:#ffeff0; /* biography text color */
+    line-height:1.8em;
+    max-height:173px;
+    overflow:auto;
+}
+
+.bio p:last-child {margin-bottom:0px;}
+
+.bio::-webkit-scrollbar {
+    height:13px;
+    width:13px;
+    background-color:#fb9d28; /* biography scrollbar background */
+}
+ 
+.bio::-webkit-scrollbar-thumb {
+    background-color:#000; /* biography scrollbar track */
+    border:6px solid #848784; /* biography scrollbar background */
+}
+ 
+.bio::-webkit-scrollbar-track {
+    background-color:#848784; /* biography scrollbar background */
+}
+ 
+</style>
+ 
+</head>
+ 
+<body>
+
+<div id="bigwrap">
+<div id="bigmid">
+<div id="box">
+    <div id="topflex">
+
+        <!----TOP BAR {TOP LEFT} TITLE---->
+        <div class="toptitle">≥ hollywoodsdevil</div>
+        
+        
+        <div class="topbar"></div>
+        
+        
+        
+        <!----TOP BAR (TOP RIGHT) NAVIGATION LINKS---->
+        
+        <!--to change icons: go to the following site-->
+        <!--scroll down to "filters" and pick what you like-->
+        <!--//themehive.tumblr.com/honeybee-->
+        <div class="topnav">
+            <a href="/" title="return"><span class="th th-home"></span></a>
+            <a href="/ask" title="contact"><span class="th th-bubble-heart"></span></a>
+            <a href="/archive" title="archive"><span class="th th-box-2"></span></a>
+            <!--PLEASE DO NOT REMOVE THE CREDIT! THANK YOU :)-->
+            <a href="//glenthemes.tumblr.com" title="page by glenthemes"><span class="th th-code"></span></a>
+        </div><!--topnav--><!--do not delete this line-->
+        
+    
+    </div><!--topflex--><!--do not delete this line-->
+    
+    
+    
+    
+    
+    <div id="mainflex">
+        <div class="leftcont">
+        
+        <!----SIDEBAR IMAGE---->
+        <!--put the url between the quotation marks of src=""-->
+        <img class="sbimg" src="https://i.ibb.co/KmD4Mc5/icon5.png">
+        
+        
+        
+        <!----MUSIC PLAYER---->
+        <div class="music-cont">
+        <div id="glenplayer02">
+            <div class="music-controls" onclick="songstart();">
+                <div class="playy">►</div>
+                <div class="pausee">❚❚</div>
+            </div>    
+            <div class="sonata">♫</div>
+            
+            <!--MUSIC TITLE-->
+            <div class="labeltext">WRONG SIDE OF HEAVEN</div>
+        </div><!--end music player--><!--do not delete this line-->
+
+
+        <!--MUSIC FILE URL-->
+        <!--put the url between the quotation marks of src=""-->
+        <!--dropbox help: //glenthemes.tumblr.com/post/164215965424-->
+<audio id="tune" src="https://dl.dropbox.com/s/rg6wg61o32khzrq/wrong%20side%20of%20heaven%20five%20finger%20death%20punch.mp3?dl=0" type="audio"></audio>
+
+
+        </div><!--music-cont--><!--do not delete this line-->
+        </div><!--leftcont--><!--do not delete this line-->
+        
+        
+        
+        
+        
+        
+        
+        <div class="rightcont">
+        
+            <!----BIOGRAPHY AREA: SMALL TITLE-->
+            <div class="smalltit">mmmm dangerous...</div>
+            
+            
+            <div class="titflex">
+                <!----BIOGRAPHY AREA: BIG TITLE-->
+                <div class="bigtit">≥ lucifer likes</div>
+                <div class="input"></div>
+            </div><!--titflex-->
+            
+            
+            <div id="quotecont">
+                <div class="takoyaki">
+                    <div class="q-topleft"></div>
+                    <div class="q-topright"></div>
+                    
+                    
+                    <!----QUOTE---->
+                    <!--make it 1 line only or else it will fuck up!-->
+                    <div class="quote">' I like to punish people too. '</div>
+                    
+                    
+                    <div class="q-botleft"></div>
+                    <div class="q-botright"></div>
+                </div><!--takoyaki-->
+                
+                <div class="yakisoba">
+                    <div class="q-right1"></div>
+                    <div class="q-right2"></div>
+                </div><!--yakisoba-->
+                
+                <div class="kimchi">
+                    <div class="arrow1"></div>
+                    <div class="arrow2"></div>
+                </div><!--kimchi-->
+            </div><!--quotecont-->
+            
+            
+            
+            <!----QUOTE BOX ICON IMAGE---->
+            <!--put the url between the quotation marks of src=""-->
+            <img class="q-icon" src="https://i.ibb.co/tsPpLxf/icon6.png">
+            
+            
+            
+            <div id="bioflex">
+                <div id="mcnugget">
+                <div id="statsbox">
+                <!----STATISTICS BOX---->
+                <!--use <br> for a line break-->
+                    <name>name</name>lucifer morningstar
+                    <br>
+                    <name>age</name>old as time itself
+                    <br>
+                    <name>job</name>lapd consultant
+                    <br>
+                    <name>gender</name>male, i believe
+                </div><!--statsbox--><!--do not ddelete this line-->
+                
+                
+                <!----CUSTOM LINKS---->
+                <div id="customlinks">
+                    <a href="/rules">etiquette</a>
+                    <a href="/verses">Ballads</a>
+                    <a href="/nav">Navigation</a>
+                    <a href="/submit">Submit</a>
+                    <a href="/">Home</a>
+                    <a href="https://katesgotabow.tumblr.com">main blog</a>
+                </div><!--customlinks-->
+                </div><!--mcnugget-->
+                
+                
+                
+                <div id="biosect">
+                    <!----BIOGRAPHY BOX TITLE---->
+                    <div class="biotit">History</div>
+                    
+                    
+                    <div class="bio">
+                    <!----BIOGRAPHY TEXT BOX---->
+                   <p><i>In the beginning... The angel Lucifer was cast out of Heaven and condemned to rule Hell for all eternity. Until he decided to take a vacation...</i></p>
+                    <p>Of course we all know the story of Samael, cast out from Heaven and sent to Hell. These stories begin when I decided to scarp it all and enjoy some me time. I bought and opened a night club in the heart of LA, called LUX, and that is definitely my pride and joy.</p>
+                    
+                    <p>Then one Detective Chloe Decker was dropped in my path and I learned of my mortality, but only with her. Thanks to dear old Dad, i've learned she is my only true weakness, and these are our adventures together.</p>
+                    </div><!--bio--><!--do not delete anything below-->
+                </div><!--biosect-->
+                
+                
+            </div><!--bioflex-->
+        </div><!--rightcont-->
+
+    </div><!--mainflex-->
+</div><!--box-->
+</div><!--bigmid-->
+</div><!--bigwrap-->
+ 
+ 
+</body>
+
+</html>
