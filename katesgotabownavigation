@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+ 
+<!----------------------
+ 
+        NAVIGATION PAGE #3 by JAKEHELPS
+                #1: Do not redistribute & claim as your own.
+                #2: Do not remove the credit.
+ 
+                Credits:
+                        sliding panel script: users on stackoverflow
+                        fonts: google webfonts
+ 
+                ---------------------------->
+               
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ 
+<title>NAVIGATION</title>
+<link rel="shortcut icon" href="{Favicon}" />
+ 
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Trochut' rel='stylesheet' type='text/css'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+ 
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(function($) {
+ 
+    $('a.panel').click(function() {
+        var $target = $($(this).attr('href')),
+            $other = $target.siblings('.active'),
+            animIn = function () {
+                $target.addClass('active').show().css({
+                    left: -($target.width())
+                }).animate({
+                    left: 0
+                }, 500);
+            };
+       
+        if (!$target.hasClass('active') && $other.length > 0) {
+            $other.each(function(index, self) {
+                var $this = $(this);
+                $this.removeClass('active').animate({
+                    left: -$this.width()
+                }, 500, animIn);
+            });
+        } else if (!$target.hasClass('active')) {
+            animIn();
+        }
+    });
+ 
+});
+ 
+ 
+ 
+</script>
+</head>
+ 
+<style type="text/css">
+ 
+body {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #aa00ff;
+        background-attachment: fixed;
+    
+        margin-bottom: 60px;
+ 
+}
+ 
+a {
+        text-decoration: none;
+        color: black;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+    height:10px;
+    background-color: #ffffff; }
+   
+::-webkit-scrollbar-thumb:horizontal {
+    height:30px;
+    background-color: #84039e; }
+   
+::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+    background-color: transparent; }
+ 
+#centered {
+        width: 900px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        background-color: #84039e;
+}
+ 
+#right {
+    position: relative;
+    float: left;
+    margin: 0 5px 0 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 120px;
+    margin-left: 280px;
+    margin-top: 100px;
+    border-radius: 3px;
+}
+ 
+div.panel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: #84039e;
+}
+ 
+#left {
+        width: 60px;
+        padding: 10px;
+        text-align: center;
+        background-color: #84039e;
+        height: 500px;
+        position: fixed;
+        float: left;
+        margin-left: 200px;
+        margin-top: 50px;
+        border-radius: 3px;
+}
+ 
+#left a {
+        font-family: fjalla one;
+        font-size: 12px;
+        color: #FFFFFF;
+        margin: 5px;
+        display: block;
+        padding: 3px;
+        text-decoration: none;
+        text-transform: uppercase;
+}
+ 
+.name {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-family: trochut;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 20px;
+        color: #FFFFFF;
+        background-color: #84039e;
+}
+ 
+.links {
+        display: block;
+        height: 350px;
+        overflow: auto;
+}
+ 
+.links a {
+        display: inline-block;
+        width: 160px;
+        height: auto;
+        padding: 5px;
+        margin: 5px;
+        background-color: #101010;
+        font-family: arial;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+ 
+.links a:hover {
+        background-color: transparent;
+}
+ 
+#navigation {
+        background-color: #202020;
+        padding: 10px 10px 12px 10px;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+}
+ 
+#navigation a {
+        display: inline-block;
+        width: 100px;
+        background-color: transparent;
+        color: #FFFFFF;
+        font-family: arial;
+        font-size: 10px;
+        text-transform: uppercase;
+        padding: 2px 10px;
+}
+ 
+#navigation a:hover {
+        background-color: #303030;
+}
+ 
+ 
+ 
+ 
+ 
+</style>
+<body>
+        <div id="centered">
+<div id="navigation">
+        <a href="http://katesgotabow.tumblr.com/">Home</a>
+        <a href="/ask">Message</a>
+        <a href="/about-me">About Me</a>
+        <a href="/navigation">Navigation</a>
+        <a href="http://jakehelps.tumblr.com">&copy;</a>
+</div>
+ 
+<div id="left">
+    <a href="#target1" class="panel">I .</a><br/>
+    <a href="#target2" class="panel">I I .</a><br/>
+    <a href="#target3" class="panel">I I I .</a><br/>
+</div>
+ 
+<div id="right">
+    <div class="panel" id="target1">
+        <div class="name">Tags</div>
+        <div class="links">
+                <a href="/tagged/i-dunno-what-they-see">Faceclaim</a>
+                <a href="/tagged/drabble">Drabbles</a>
+                <a href="/tagged/headcanon">Headcanons</a>
+                <a href="/tagged/kates-favorite-things">Favorite Things</a>
+                <a href="/tagged/things-kate-can-do">Abilities</a>
+                <a href="/relationships">relationships</a>
+                <a href="/tagged/food-porn">Food Porn</a>
+                <a href="/tagged/god-damn-it-clint">Clint Barton</a>
+                <a href="/tagged/Uh-sir%3F-Jesus">Phil Coulson</a>
+                <a href="/tagged/She%27s-so-gorgeous">Natasha Romanoff</a>
+                <a href="/tagged/Sometimes-I-hate-you-and-your-face">Tony Stark</a>
+                <a href="/tagged/holy-hell-loki">Loki Laufeyson</a>
+                <a href="/tagged/fuck-you-and-your-face-bucky-barnes">Bucky Barnes</a>
+                <a href="/tagged/lucky-come">Pizza Dog</a>
+                <a href="/tagged/secret-things">Secret Things</a>
+                <a href="/tagged/nsfw">NSFW</a>
+                <a href="/tagged/oooo-pretty">Pretty Things</a>
+                <a href="/tagged/corset-porn">Corset Porn</a>
+                <a href="/tagged/Kate-would-totally-wear-this.">Clothes Porn</a>
+                <a href="/tagged/dreamscape">Dreams Drabbles</a>
+                <a href="/tagged/reference">reference</a>
+                <a href="/tagged/i-want-one">wants</a>
+                <a href="/tagged/my-babies">my babies</a>
+                <a href="/tagged/kate-is-a-scorpio">Kate is a Scorpio</a>
+                <a href="/tagged/dani-is-a-pisces">Dani is a Pisces</a>
+                <a href="/tagged/ooc">ooc</a>
+                <a href="/tagged/mah-faise">Mun Face</a>
+                <a href="/tagged/asha-look">asha look</a>
+                <a href="/tagged/my-edits">my edits</a>
+                <a href="/tagged/my-art">my art</a>
+                
+              </a>
+ 
+        </div>
+    </div>
+ 
+    <div class="panel" id="target2">
+        <div class="name">Verses</div>
+    <div class="links">
+        <a href="http://assvengers-rpgroup.tumblr.com/">Assvengers Verse</a>
+        <a href="http://thecrosshair.tumblr.com/">Crosshair AU</a>
+        <a href="tbd">Hooker AU</a>
+        <a href="tbd">What is this fuckery?</a>
+        <a href="tbd">Point Me</a>
+        <a href="tbd">Child's Play AU</a>
+        <a href="tbd">kINGS OF CHAOS</a>
+        <a href="tbd">serial killer au</a>
+        <a href="tbd">Dust Of Nations au</a>
+        
+    </div>
+    </div>
+ 
+    <div class="panel" id="target3">
+        <div class="name">Other Info</div>
+        <div class="links">
+        <a href="/faces">Faceclaims (other)</a>
+        <a href="/about-me">About Muse</a>
+        <a href="#">About Mun</a>
+       
+       
+        </div>
+    </div>
+ 
+<!---- ADD SECTIONS HERE -->
+ 
+</div>
+ 
+<!----- HOW TO ADD ANOTHER SECTION
+ 
+        STEP 1: Copy "<a href="#target4" class="panel">I V .</a><br/>" and paste it on how many number of sections you want in the navbar. Change "#target4" to "#target5/6/7/whatever number"
+ 
+        STEP 2: Copy THIS:
+ 
+        <div class="panel" id="target4">
+        <div class="name">heading</div>
+        <div class="links">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+       
+        </div>
+    </div>
+ 
+        and change the  "target4" to the number target you placed in the navbar link like "target5" "target6" etc. Add this new section under the indicate region that says ADD SECTIONS HERE.
+ 
+        Repeat the process until you have the number of boxes you desire.
+ 
+-->
+ 
+</div>
+ 
+ 
+ 
+</body>
+</html>
