@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+ 
+<!----------------------
+ 
+        ABOUT PAGE 3 by JAKEHELPS
+                #1: Do not redistribute & claim as your own.
+                #2: Do not remove the credit.
+ 
+                ---------------------------->
+               
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ 
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}" />
+ 
+<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+ 
+</head>
+<style type="text/css">
+body {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #FFFFFF;
+        background-attachment: fixed;
+        background-image:url('http://25.media.tumblr.com/dc74d0fc4cd1d55ea86607ef3a4bd4b7/tumblr_mni1ao5IcB1sofm3xo1_250.png');
+        margin-bottom: 50px;
+}
+ 
+a {
+        text-decoration: none;
+        color: black;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+    height:10px;
+    background-color: #0195ab; }
+   
+::-webkit-scrollbar-thumb:horizontal {
+    height:30px;
+    background-color: #0195ab; }
+   
+::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+    background-color: transparent; }
+       
+#navigation {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        background-color: #202020;
+}
+ 
+#navigation a {
+        display: block;
+        padding: 26px 30px;
+        background-color: #505050;
+        font-family: 'fjalla one';
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+ 
+#navigation a:hover {
+        padding-right: 100px;
+}
+ 
+#circle {
+        width: 1220px;
+        height: 1220px;
+        background-color: #e6b3ff;
+        position: fixed;
+        border-top-right-radius: 640px;
+        border-bottom-right-radius: 600px;
+        margin-top: -300px;
+        margin-left: -500px;
+        border: 15px solid #FFFFFF;
+}
+ 
+.about {
+        width: 650px;
+        height: 650px;
+        background-color: transparent;
+        margin-top: 320px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 240px;
+        padding: 10px;
+        margin-left: 500px;
+}
+ 
+.title {
+        font-family: 'abril fatface';
+        font-size: 24px;
+        color: #202020;
+        width: 400px;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 70px;
+        background-color: transparent;
+        text-align: center;
+}
+ 
+.description {
+        width: 500px;
+        height: 300px;
+        background-color: transparent;
+        padding: 5px;
+        overflow: auto;
+        margin-left: 40px;
+        font-family: cambria;
+        font-size: 12px;
+        color: #505050;
+        margin-bottom: 20px;
+}
+       
+.quote {
+        font-family: abril fatface;
+        font-size: 14px;
+        color: #202020;
+        width: 500px;
+        height: auto;
+        padding: 10px;
+        margin-left: 20px;
+        text-align: center;
+}
+ 
+.mark {
+        font-family: 'times new roman';
+        font-size: 40px;
+        background-color: #202020;
+        color: #FFFFFF;
+        padding: 0px 5px 10px 4px;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        margin-left: 260px;
+}
+ 
+.line {
+        border-top: 4px solid #202020;
+        width: 300px;
+        margin-left: 130px;
+        margin-top: -15px;
+}
+ 
+.portrait {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #FFFFFF;
+        margin-left: 265px;
+        margin-top: -10px;
+}
+       
+#credit a {
+        margin-top: 90px;
+        color: #202020;
+        margin-left: 230px;
+        font-family: cambria;
+        font-size: 10px;
+        opacity: 0.2;
+        position: absolute;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+ 
+#credit a:hover {
+        opacity: 1;
+}
+       
+       
+</style>
+<body>
+<div id="navigation">
+        <a href="http://www.tumblr.com/dashboard" style="background-color: #aa00ff;">dashboard</a>
+        <a href="/ask" style="background-color: #9b00e8;">ask an archer</a>
+        <a href="/submit" style="background-color: #8b00d1;">got something?</a>
+        <a href="/relationships" style="background-color: #8500c7;">relationships</a>
+        <a href="/faces" style="background-color: #7900B5;">faceclaims</a>
+        <a href="/tagged/headcanon" style="background-color: #7000A8;">headcanons</a>
+        <a href="#" style="background-color: #660099;"></a>
+        <a href="/tagged/ooc" style="background-color: #5A0087;">OOC</a>
+        <a href="/navigation" style="background-color: #4E0075;">navigation</a>
+</div>
+ 
+<div id="circle">
+        <div class="about">
+                <div class="portrait"><img src="{PortraitURL-48}" /></div>
+                <div class="title">ABOUT ME.</div>
+                <div class="description">
+<b>CODE NAME:</b> Hawkeye<br>
+<b>AGE:</b> 23 <br>
+<b>LOCATION:</b> New York (616), also could be LA depending on the timeline. <br>
+<b>TEAM:</b> Young Avengers/Avengers/SHIELD (depending on the verse).<br>
+<b>POWERS:</b> Impecable timing, Sarcasm, Archery.<br><br>
+<b>HISTORY:</b><br>
+Kate Bishop, even as a child, strived to do everything to the best of her ability. She wanted to live up to her parent’s expectations of what their youngest daughter should be like. Her dad pointed out little things to her even at an early age of ‘how come you can’t be more like Susan?’ She tried. God, did she try. But she wasn’t like Susan. She was a girly girl who wanted all the dresses and the princesses and the girly things. Kate liked ballet, and things like that, but she wanted to be out in the backyard, pretending to be a fairy or a pirate, or anything in between. Ballet was the one thing she thought her dad would be proud of her for, and it wasn’t him that was proud, it was her mother. She was glad that Kate found something where she could thrive and smile more often than she did at home.
+<br><br>
+Eleanor was a great mother to Kate and they had their own excursions to the places that Kate liked, and yes they would go shopping and so some girly things, but her mom saw her look at a bow in the window when she was six years old, on their way to another place. Eleanor knelt down and explained what a bow was and how it needed strength and accuracy. Focus. Which was when she also told her the stories of when she was about Susan’s age, maybe fourteen or fifteen, how her and her family went to the circus, where she saw the most talented young man.
+<br><br>
+Clint Barton, she said his name was, and even at that age was had to be one of the best archers she had ever seen. Kate was enamoured with the story and wanted to try. She was told she had to wait until she was a little older. Her seventh birthday though, sure enough her mom had gotten her a starter bow, and a coach at the local range. Kate was ecstatic.
+<br><br>
+And with that her and her mom had a new routine. Her dad was busy with taking Susan to things she wanted to go to, and work. That was fine with Kate though. She and her mom spent a lot of time talking about a lot of things and Kate asked her mom if they could go to the philharmonic orchestra for Eleanor’s birthday and it seemed like an excellent idea. Well that was where Kate fell in love with the sound of the string section and how smooth and free it felt.Even in the darkest moments it was a glimmer of something else.
+<br><br>
+So she joined the school band, and began to learn how to play the cello. It was rusty at first, as are all things that are new but she caught on quick, and learned what sounds she liked, and those she didn’t. She learned how to play little melodies and harmonies and she was proud of herself. She had accomplished three things by the time she was eight. She could play all her scales on her cello, and rather well, she was getting better, and stronger at archery that they already had to move her up to a stronger bow, because once she was at he range she never wanted to leave. And lastly, she had found dance, pointe ballet. She was able to keep all three until two weeks before her ninth birthday. 
+<br><br>
+Her mother came down with meningitis, and severely. There was nothing the doctors found they could do at the time, except make her comfortable. They didn’t expect her to last more than a couple of days. This crushed most of Kate’s world because her mom, at that time had been her best friend and the one who helped her do everything she wanted to do.
+<br><br>
+It hadn’t occurred to Derek at the time, because he was never home but the day they picked for his wife’s funeral had also been Kate’s birthday, which crushed her even more. She had to give up dance because he could only be in so many places at once, and archery had been her first true love. Dance she could go back to when she was older, if she wanted to. So between school and archery, Kate didn’t let herself feel much of anything. she trudged through the days more often than not. And it didn’t occur to her that Derek was having a harder time than he was letting on. 
+<br><br>
+He shut both the girls out and Kate took this terribly, because there was no one else she could go to. Susan was already out and gone off to college by this point so at home that left Derek and Kate.
+<br><br>
+Now she’s ten and Derek moved her into a better private school, one that would pick her up from home in the morning and drop her off at the range after school so she could spend a couple hours there with the mentor she had found. She told him about the story her mom had told her about Clint Barton when she was little and the guy smiled, almost like he knew him, which Kate never did find out, but he nodded and said that Barton was the World’s Greatest Marksman and after he left the circus he hadn’t really been heard of, as far as he was aware. Most assumed he had died. But Kate had that drive now that she wanted to be better than him. Better than all of them.
+<br><br>
+So what once was just an hour or two at the range after school became three of four hours, every day. Some days longer, like on weekends where she could be there from the time they opened until they closed, if she so pleased. The bows kept getting stronger and the draw weight higher as she went. The private school she was in though had a bunch of other things she had wanted to try, like fencing, and there was a kick boxing class. Both of which she wanted to try. They were during lunch hours so she found it didn’t take away from her archery time, which was great.
+<br><br>
+Every year, on her birthday though, Kate goes to sit at her mom’s grave and tell her all the things that have happened to her in the past year. Some things are better than others, like she always asks why her dad always worked so much lately and she rarely saw much of him at all. There was never an answer but she knew that her mom heard her. She just did.
+<br><br>
+It was in the early fall when she was fifteen that a lot of things changed for her. She was taking her shortcut across Central Park to get home after her time at the range when she was tackled to the ground and before she really knew what was happening she was on her back being pinned down by a much larger man who held her there with a knife and said if she screamed she would be dead. Well as much as she had been taking kickboxing it hadn’t prepared her for this kind of attack so she had to let it happen. She whimpered and cried as quietly as she could with the pain she was in. He was trying to tell her that she wanted it and it was okay but she just wanted to hurl. 
+<br><br>
+Some other lady came upon them and he scrambled off leaving Kate on the ground to curl up and cry. She curled up as small as she was capable of while the lady called for the cops who took off after the guy but lost him on the other side of the park. in the midst of her crying she was pretty sure she had thrown up and was dry heaving at some point while a female officer tried to calm her down while they waited for her dad to come get her.
+<br><br>
+There was a police report filed but there was no DNA to go off of because the man had been smart and while pinning her down he had put a condom on, as well as wore a mask so she couldn’t see his face. Even if she wanted to Kate wouldn’t have been able to pick him out of a line up. The case went cold and she just felt sicker and more disgusted with herself that it had happened. Derek didn’t sit and talk with her though, he shuffled her off to a therapist. And well that cycle went on until she just stopped going, Kate couldn’t connect with any of the therapists they tried and every time she had to recount what happened with a new therapist she clammed up and felt sick again. She stopped playing cello on her own time and only played it at school. When she was home she never came out of her room, and if she was out the only place she was, was at the range.
+<br><br>
+Derek finally took notice when Kate looked like she hadn’t been sleeping and was thinner than usual, trying to make sure she at least ate when they were home. He would leave a plate of dinner in her room. It didn’t occur to him what was actually going on, but he knew she wasn’t okay. It was kind of a shock to Kate that it took him until she was in the worst rut of her life for him to notice something was wrong. She felt numb, most of the time. Numb and empty. 
+<br><br>
+That numbness landed her in the hospital after an incident with a kitchen knife. It had taken seventeen stitches to close the wound. It also left her on suicide watch in the hospital for a month until they knew she was calm and stable enough to be returned to her father’s care. It was after that, that Kate picked up a lot more things, and was pretty much never home. Fencing and learning to use a sword. Kickboxing and jiujitsu, still a couple hours a day at the archery range. Still pushing hard in school, though that wasn’t always pretty. She had been suspended three times due to picking fights and breaking noses with the other girls in her class. The answer always was, they brought it on themselves. Derek didn’t exactly approve, but he knew that if Kate was pounding on these girls like that there was a reason.
+<br><br>
+Fast forward to age sixteen, almost seventeen; it’s 2012. It’s late in the summer season and Kate’s at her sisters wedding. In the wedding party, because Susan decided that even though they didn’t talk much she still should be in the wedding. She is family after all. They had just said ‘I do’ when something crashed into the park outside and too off the top corner of the roof on the church. Mass chaos ensued and she got separated from the wedding party when she made a beeline to get a couple of the kids out of the way of a falling rafter. There seemed to be a mass exodus outside to see if they either could figure out what was going on or get the hell out of there. Kate didn’t know which but what she did know was there were guys who looked like Feds ushering people off the street before the church was hit by some kind of weapon and it was her turn to dive out of the way to avoid getting hit by falling debris.
+<br><br>
+She had touched one of the pieces that their alien tech had shot, though didn’t think anything of it at the time. A girl had to get up you know. She got out of the church and a couple of said Federal looking guys helped her down to the street where everyone else had been led. They told her to follow everyone else and get out of there. Well we all know how stubborn Kate is. So she lurked a while, not long because she didn’t have any of her gear with her, but now she wanted to know more. More of what they were and what they did.
+<br><br>
+The more she dug the less she found. There were news stories of the Avengers and all that crap but there wasn’t anything about their federal associations. No counterpart in the background that was overseeing everything. It bothered her that sometimes when she got home there was one of those black vehicles outside her place. It was off and on. Sometimes she didn’t think they were there at all.
+<br><br>
+Time passed and her curiosity stuck around though she started to think less and less on it until she spotted the black SUV again outside her apartment when she was coming back with her gear from the range. It came off to her at first as paparazzi, being who her father was and all, but it didn’t seem pushy enough? She never forgot though. 
+<br><br>
+(Everything stems from this general idea. If there are things that are different, it's for a specific verse. feel free to ask questions though.)
+                </div>
+                <div class="mark">"</div><div class="line"></div>
+                <div class="quote">
+                we can't just stop because captain america thinks we're too young.
+                </div>
+                <div id="credit"><a href="http://jakehelps.tumblr.com">&copy; jakehelps 2013</div>
+        </div>
+       
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
