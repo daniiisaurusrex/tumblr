@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<!-- octomoosey @ tumblr -->
+ 
+<script type="text/javascript"
+src="//ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+//
+$('a.poplight[href^=#]').click(function() {
+var popID = $(this).attr('rel'); 
+var popURL = $(this).attr('href'); 
+var query= popURL.split('?');
+var dim= query[1].split('&');
+var popWidth = dim[0].split('=')[1]; 
+$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"></a>');
+var popMargTop = ($('#' + popID).height() + 50) / 2;
+var popMargLeft = ($('#' + popID).width() + 50) / 2;
+$('#' + popID).css({
+'margin-top' : -popMargTop,
+'margin-left' : -popMargLeft
+});
+$('body').append('<div id="fade"></div>');
+$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn();
+return false;
+});
+$('a.close, #fade').live('click', function() {
+$('#fade , .popup_block').fadeOut(function() {
+$('#fade, a.close').remove(); 
+});
+return false;
+});
+});
+</script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Meddon" rel="stylesheet">
+
+<style type="text/css">
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;}
+::-webkit-scrollbar-thumb {
+    background: #fb9d28;  /** change scrollbar color **/
+    border: 0px none #000;
+    border-radius: 50px;}
+ 
+iframe#tumblr_controls {
+    right:3px !important;
+    position: fixed !important;
+    -webkit-transition: opacity 0.7s
+    linear;opacity: 0.2;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;}
+ 
+    iframe#tumblr_controls:hover{
+    -webkit-transition: opacity 0.7s linear;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;}
+ 
+body {
+    line-height:100%;
+    color:#000;
+    font-family:'Gibson', sans-serif;
+    font-size: 11px;
+    background-attachment:fixed;
+    background-color:#000; /** change main background color **/
+    margin-top:0px;
+    margin-left:0px;
+    background-attachment:fixed;
+    background-image: ;  /** change background url **/
+    background-repeat:no-repeat;
+    background-position: bottom right;}
+     
+a {
+    text-decoration:none;
+    outline:none;
+    -moz-outline-style:none;
+    color:#ffeff0; /** change link color**/
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}
+ 
+a:hover {
+    color:#c40002; /** change link hover color **/
+     -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}
+       
+#nav{
+    position:relative;
+    margin-top:35px;
+    margin-right:20px;
+    text-align:right;}
+   
+#nav a {
+    font-family: 'Cinzel', serif;
+    display:inline-block;
+    line-height:32px;
+    font-size: 14px;
+    margin-right: 10px;
+    letter-spacing: 0px;
+    padding-left:10px;
+    text-shadow: 1px 1px 1px #000;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;}
+ 
+#nav a:hover{
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    word-spacing: -2px;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;}  
+       
+#header {
+    left:50%;
+    margin-left:-400px;
+    background:#001b2f; /** change header background color **/
+    width:800px;
+    height:100px;
+    position: fixed;
+    top: 130px;}
+    
+#header2 {
+    background-image: url('https://i.ibb.co/T2YSn9B/header2.png'); /** change banner image url **/
+    background-repeat: no-repeat;
+    left:50%;
+    margin-left:-400px;
+    width:800px;
+    height:200px;
+    position: fixed;
+    top: 225px;}    
+  
+#credit {
+    z-index:8;
+    bottom:0px;
+    left:5px;
+    height:30px;
+    width:30px;
+    opacity:0.8;
+    position:fixed;
+    padding:5px;}    
+    
+.popup_block{
+    width: 440px;
+    max-height: 400px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    color:#ffeff0; /** change popup text color **/
+    display:none;
+    background:#001b2f; /** change popup background color**/
+    background-image:  /** change popup background url or delete for plain background **/
+    background-position: bottom; /** change popup background image alignment **/
+    background-repeat: no-repeat;
+    padding:20px;
+    border:1px solid #ffeff0;
+    text-shadow:2px 2px 2px #000;
+    float:left;
+    position:fixed;
+    top:50%;left:50%;
+    z-index: 99999;
+    -webkit-box-shadow: 2px 2px 5px #000;
+    -moz-box-shadow: 2px 2px 5px #000;
+    box-shadow: 2px 2px 5px #000;}
+ 
+*html #fade {position: absolute;}
+*html .popup_block {position: absolute;}
+#fade {
+    display:none;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:9999;
+    background:#000; /** change popup background fade color **/
+    opacity:0.6; }    
+    
+#blockcontainer {
+    top:325px;
+    position:absolute;
+    left:50%;
+    margin-left:-400px;
+    background:#001b2f; /** change link block background color **/
+    width:800px;
+    height:135px;}    
+    
+#blocktitles {
+    margin-top:5px;
+    font-family: 'Cinzel', serif;
+    text-align:center;}    
+
+#blocktitles a {
+    display:inline-block;
+    width:165px;
+    padding:5px;
+    margin:10px 10px 10px 10px;
+    background:#848784;} /** change link background color **/
+    
+#boxtitle {
+    font-family: 'Cinzel', serif;
+    text-align:center;
+    font-size:18px;
+    margin-bottom:10px;}    
+    
+#headertitle {
+    margin-top:30px;
+    font-family: 'Meddon', cursive;
+    line-height:40px;
+    margin-left:20px;
+    position:fixed;
+    font-size:30px;
+    color:#ffeff0;
+    text-shadow: 3px 3px 2px #c40002
+} /** change title color **/    
+
+</style>
+<body>
+
+<div id="header">
+<div id="headertitle">Lucifer Morningstar</div>
+<div id="nav">
+<a href="/">home</a>
+<a href="/ask">questions</a>
+<a href="/submit">submit</a>
+<a href="https://www.tumblr.com/dashboard">dash</a>
+</div>
+</div></div>
+
+<div id="header2"></div>
+
+<!-- for more boxes make sure to add in another box reference to this list, then make sure it matches the box number below -->
+
+<div id="blockcontainer">
+<div id="blocktitles">
+<a href="#?w=400" rel="box1" class="poplight">people</a>
+<a href="#?w=400" rel="box2" class="poplight">places</a>
+<a href="#?w=400" rel="box3" class="poplight">things</a>
+<a href="#?w=400" rel="box4" class="poplight">aesthetic</a><br>
+<a href="#?w=400" rel="box5" class="poplight">title five</a>
+<a href="#?w=400" rel="box6" class="poplight">title six</a>
+<a href="#?w=400" rel="box7" class="poplight">title seven</a>
+<a href="#?w=400" rel="box8" class="poplight">title eight</a><br>
+<a href="#?w=400" rel="box9" class="poplight">title nine</a>
+<a href="#?w=400" rel="box10" class="poplight">title ten</a>
+<a href="#?w=400" rel="box11" class="poplight">title eleven</a>
+<a href="#?w=400" rel="box12" class="poplight">title twelve</a>
+</div></div>
+
+<!-- for more boxes copy from here to END COPY, and make sure the box number matches with a link number above!! -->
+
+<div id="box1" class="popup_block">
+<div id="boxtitle">people</div>
+<li><a href="/">Detective Chloe Decker</a></li>
+<li><a href="/">Trixie</a></li>
+<li><a href="/">Mazikeen 'Maze' Smith</a></li>
+<li><a href="/">Detective Dan 'Douche' Espinoza</a></li>
+<li><a href="/">Ella Lopez</a></li>
+<li><a href="/">Doctor Linda Martin</a></li> 
+<li><a href="/">Amenadiel, darling brother</a></li>
+<li><a href="/">Marcus Pierce, aka Cain</a></li>
+<li><a href="/">Uriel</a></li>
+<li><a href="/">Azrael</a></li>
+</div>
+
+<!-- END COPY -->
+ 
+<div id="box2" class="popup_block">
+<div id="boxtitle">Places</div>
+<li><a href="/">Lux</a></li>
+<li><a href="/">Los Angeles</a></li>
+<li><a href="/">Hell</a></li>
+<li><a href="/">Heaven</a></li>
+</div>
+ 
+<div id="box3" class="popup_block">
+<div id="boxtitle">things</div>
+<li><a href="/">you think water</a></li>
+<li><a href="/">moves fast</a></li>
+<li><a href="/">you should see ice</a></li>
+<li><a href="/">it moves like it</a></li>
+<li><a href="/">has a mind</a></li>
+<li><a href="/">like it knows it</a></li>
+<li><a href="/">killed the world once</a></li>
+<li><a href="/">and got a taste</a></li>
+<li><a href="/">for murder</a></li>
+<li><a href="/">after the avalanche</a></li>
+<li><a href="/">it took us a week to</a></li>
+<li><a href="/">climb out</a></li>
+<li><a href="/">now i don't exactly</a></li>
+<li><a href="/">know when we</a></li>
+<li><a href="/">turned on each other</a></li>
+<li><a href="/">but i know that seven of us</a></li>
+<li><a href="/">survived the slide</a></li>
+<li><a href="/">and only five</a></li>
+<li><a href="/">made it out</a></li>
+</div>
+ 
+<div id="box4" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">your bones dont break</a></li>
+<li><a href="/">mine do</a></li>
+<li><a href="/">thats clear</a></li>
+<li><a href="/">your cells react to bacteria and</a></li>
+<li><a href="/">viruses differently than mine</a></li>
+<li><a href="/">you dont get sick</a></li>
+<li><a href="/">i do</a></li>
+<li><a href="/">thats also clear</a></li>
+<li><a href="/">but for some reason you and i</a></li>
+<li><a href="/">react the same way to water</a></li>
+<li><a href="/">we swallow it too fast</a></li>
+<li><a href="/">we choke</a></li>
+<li><a href="/">we get some in our lungs</a></li>
+<li><a href="/">we drown</a></li>
+<li><a href="/">we are connected you and i</a></li>
+<li><a href="/">were on the same curve</a></li>
+<li><a href="/">just at opposite ends</a></li>
+</div>
+
+<div id="box5" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">now there is the tec-9</a></li>
+<li><a href="/">a crappy spray gun from</a></li>
+<li><a href="/">south miami</a></li>
+<li><a href="/">this gun is advertised as the</a></li>
+<li><a href="/">most popular gun in american crime</a></li>
+<li><a href="/">do you believe that shit?</a></li>
+</div>
+
+<div id="box6" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">normally</a></li>
+<li><a href="/">both your asses would be dead</a></li>
+<li><a href="/">as a fucking fried chicken</a></li>
+<li><a href="/">but you happen to pull</a></li>
+<li><a href="/">this shit</a></li>
+<li><a href="/">when im in a transitional period</a></li>
+<li><a href="/">so i don't wanna kill you</a></li>
+<li><a href="/">i wanna help you</a></li>
+<li><a href="/">but i cant give you this case</a></li>
+<li><a href="/">it dont belong to me</a></li>
+<li><a href="/">besides ive already been through too much</a></li>
+<li><a href="/">shit this morning over this case</a></li>
+<li><a href="/">to had it over to your dumb ass</a></li>
+</div>
+
+<div id="box7" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">well the way</a></li>
+<li><a href="/">they make shows is</a></li>
+<li><a href="/">they make one show</a></li>
+<li><a href="/">that show's called</a></li>
+<li><a href="/">a pilot</a></li>
+<li><a href="/">then they show</a></li>
+<li><a href="/">that show</a></li>
+<li><a href="/">to the people</a></li>
+<li><a href="/">who make shows</a></li>
+<li><a href="/">and on the strength</a></li>
+<li><a href="/">of that one show</a></li>
+<li><a href="/">they decide if theyre</a></li>
+<li><a href="/">going to make more shows</a></li>
+<li><a href="/">some pilots get</a></li>
+<li><a href="/">picked and</a></li>
+<li><a href="/">become television programs</a></li>
+<li><a href="/">some dont</a></li>
+<li><a href="/">become nothing</a></li>
+<li><a href="/">she starred in one</a></li>
+<li><a href="/">of the ones that</a></li>
+<li><a href="/">became nothing</a></li>
+</div>
+ 
+<div id="box8" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">now there is the tec-9</a></li>
+<li><a href="/">a crappy spray gun from</a></li>
+<li><a href="/">south miami</a></li>
+<li><a href="/">this gun is advertised as the</a></li>
+<li><a href="/">most popular gun in american crime</a></li>
+<li><a href="/">do you believe that shit?</a></li>
+</div>
+ 
+<div id="box9" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">you think water</a></li>
+<li><a href="/">moves fast</a></li>
+<li><a href="/">you should see ice</a></li>
+<li><a href="/">it moves like it</a></li>
+<li><a href="/">has a mind</a></li>
+<li><a href="/">like it knows it</a></li>
+<li><a href="/">killed the world once</a></li>
+<li><a href="/">and got a taste</a></li>
+<li><a href="/">for murder</a></li>
+<li><a href="/">after the avalanche</a></li>
+<li><a href="/">it took us a week to</a></li>
+<li><a href="/">climb out</a></li>
+<li><a href="/">now i don't exactly</a></li>
+<li><a href="/">know when we</a></li>
+<li><a href="/">turned on each other</a></li>
+<li><a href="/">but i know that seven of us</a></li>
+<li><a href="/">survived the slide</a></li>
+<li><a href="/">and only five</a></li>
+<li><a href="/">made it out</a></li>
+</div>
+ 
+<div id="box10" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">your bones dont break</a></li>
+<li><a href="/">mine do</a></li>
+<li><a href="/">thats clear</a></li>
+<li><a href="/">your cells react to bacteria and</a></li>
+<li><a href="/">viruses differently than mine</a></li>
+<li><a href="/">you dont get sick</a></li>
+<li><a href="/">i do</a></li>
+<li><a href="/">thats also clear</a></li>
+<li><a href="/">but for some reason you and i</a></li>
+<li><a href="/">react the same way to water</a></li>
+<li><a href="/">we swallow it too fast</a></li>
+<li><a href="/">we choke</a></li>
+<li><a href="/">we get some in our lungs</a></li>
+<li><a href="/">we drown</a></li>
+<li><a href="/">we are connected you and i</a></li>
+<li><a href="/">were on the same curve</a></li>
+<li><a href="/">just at opposite ends</a></li>
+</div>
+
+<div id="box11" class="popup_block">
+<div id="boxtitle">boxtitle</div>
+<li><a href="/">now there is the tec-9</a></li>
+<li><a href="/">a crappy spray gun from</a></li>
+<li><a href="/">south miami</a></li>
+<li><a href="/">this gun is advertised as the</a></li>
+<li><a href="/">most popular gun in american crime</a></li>
+<li><a href="/">do you believe that shit?</a></li>
+</div>
+
+<div id="box12" class="popup_block">
+<li><a href="/">normally</a></li>
+<li><a href="/">both your asses would be dead</a></li>
+<li><a href="/">as a fucking fried chicken</a></li>
+<li><a href="/">but you happen to pull</a></li>
+<li><a href="/">this shit</a></li>
+<li><a href="/">when im in a transitional period</a></li>
+<li><a href="/">so i don't wanna kill you</a></li>
+<li><a href="/">i wanna help you</a></li>
+<li><a href="/">but i cant give you this case</a></li>
+<li><a href="/">it dont belong to me</a></li>
+<li><a href="/">besides ive already been through too much</a></li>
+<li><a href="/">shit this morning over this case</a></li>
+<li><a href="/">to had it over to your dumb ass</a></li>
+</div>
+
+</div>
+
+</div></div>
+<!-- DON'T remove credit, thanks --> 
+<div id="credit"><a href="https://octomoosey.tumblr.com/" title="theme by octomoosey"><img src="https://static.tumblr.com/uopakca/cwDo0y64u/octopus-24.png"></a></div>
+</div></div></div>
+</body>
+</html>
