@@ -1,0 +1,1637 @@
+<!---/** https://pastebin.com/XVs97mbc is the link to the pastebin * / page by codewrites who is deactivated....just don't steal it in general. use common sense. pop up coding from octomoosey, who got it from str-wrs and some of the pop up internal coding is from erika-writes, so this is a mash up of some coding i'm just freaking glad it works. --->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>safe haven</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+//
+$('a.poplight[href^=#]').click(function() {
+var popID = $(this).attr('rel'); //Get Popup Name
+var popURL = $(this).attr('href'); //Get Popup href to define size
+var query= popURL.split('?');
+var dim= query[1].split('&');
+var popWidth = dim[0].split('=')[1]; //Gets the first query string value
+$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"></a>');
+var popMargTop = ($('#' + popID).height() + 80) / 2;
+var popMargLeft = ($('#' + popID).width() + 80) / 2;
+//Apply Margin to Popup
+$('#' + popID).css({
+'margin-top' : -popMargTop,
+'margin-left' : -popMargLeft
+});
+$('body').append('<div id="fade"></div>');
+$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //Fade in the fade layer - .css({'filter' : 'alpha(opacity=80)'})
+return false;
+});
+$('a.close, #fade').live('click', function() {
+$('#fade , .popup_block').fadeOut(function() {
+$('#fade, a.close').remove(); //fade them both out
+});
+return false;
+});
+});
+</script>
+    <link rel="shortcut icon" href="{Favicon}">
+    
+    
+    <style type="text/css">
+
+    body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	background-color:#2b1527;
+	color: #e8a5db;
+	margin-top:0;
+    padding-top:0;
+    }
+
+    a {
+    	color: #a77dc2;
+    	text-decoration: none;
+    }
+    
+    a:hover {
+    	color: #d969c3;
+    }
+    
+    a, ul#characters li img, ul#characters li .name {
+    	-moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    
+    .clear {
+    	clear: both;
+    }
+    
+    ::-webkit-scrollbar-track
+    {
+    	background-color: #330c1a;
+    }
+    
+    ::-webkit-scrollbar
+    {
+    	width: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+    	background-color: #d0c3e6;
+    }
+    
+    #header {
+    	position: fixed;
+    	width: 90%;
+    	height: 140px;
+    	margin: 0 0 0 5%;
+    	padding-top: 35px;
+    	background-image: url('https://imgur.com/mnVhhQ7.png');
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	border-bottom: 5px solid #e8a5db;
+    	z-index: 9;
+    }
+    
+    
+#title {
+    	float: left;
+    	font-family: 'Euphoria Script', cursive;
+    	font-size: 100px;
+    	text-transform: lowercase;
+    	transform: rotate(-6deg);
+    	letter-spacing: -7px;
+    	margin-right: 25px;
+    	padding-right: 25px;
+    	border-right: 5px solid #e8a5db;
+    	text-shadow: 2px 2px 3px #8d7caa;
+    }
+    
+    ul#nav {
+    	padding: 0;
+    	list-style-type: none;
+    	float: left;
+    	height: 75px;
+    	margin-top: 35px;
+    	transform: rotate(-6deg);
+    }
+    
+    ul#nav li {
+    	float: left;
+    	margin: 0 10px 10px 0;
+    	padding: 5px 0;
+    	text-transform: uppercase;
+    	font-size: 12px;
+    }
+    
+    #filter {
+    	position: relative;
+    	float: right;
+    	margin-top: 35px;
+    }
+    
+    label {
+    	font-family: 'Raleway', sans-serif;
+    	margin-right: 10px;
+    	text-transform: uppercase;
+    }
+    
+    ul#dropdown {
+    	float: left;
+    	margin-right: 10px;
+    	padding: 0;
+    	list-style-type: none;
+    	width: 120px;
+    	border: 1px solid #8d7caa;
+    	cursor: pointer;
+    	box-shadow: 3px 3px 3px #572a4e inset;
+    	background-image: url('http://static.tumblr.com/iqaf8og/Scco7yew5/arrow.png');
+    	background-repeat: no-repeat
+    }
+    
+    ul#dropdown li {
+    	padding: 5px;
+    	display: none;
+    }
+    
+    ul#dropdown li.label {
+    	display: block;
+    	font-family: 'Raleway', sans-serif;
+    	text-transform: uppercase;
+    }
+    
+    ul#dropdown li.option {
+    	background-color: #572a4e;
+    }
+    
+    ul#dropdown li.option:hover, ul#dropdown li.active {
+    	background-color: #463e55;
+    }
+    
+    #container {
+    	position: absolute;
+    	width: 90%;
+    	margin: 200px 0 0 5%;
+    	z-index: 8;
+    }
+    
+    ul#characters {
+    	padding: 0;
+    	list-style-type: none;
+    }
+    
+    ul#characters li {
+    	position: relative;
+    	float: left;
+    	width: 250px;
+    	height: 250px;
+    	border-radius: 100%;
+    	margin: 25px;
+    	overflow: hidden;
+    	background-image: url('https://imgur.com/mnVhhQ7.png');
+    	background-color: #572a4e;
+    	border: 3px solid #231f2b;
+    }
+    
+    ul#characters li .bg {
+    	position: absolute;
+    	width: 250px;
+    	height: 250px;
+    	background-size: cover;
+    	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+        filter: grayscale(100%);
+        opacity: 0.2;
+    }
+    
+    ul#characters li img {
+    	position: absolute;
+    	width: 200px;
+    	height: 200px;
+    	margin: 25px;
+    	border-radius: 100%;
+    }
+    
+    .name {
+    	position: absolute;
+    	width: 250px;
+    	background-color: #231f2b;
+    	text-align: center;
+    	font-size: 32px;
+    	color: #dccbe7;
+    	font-family: 'Euphoria Script', cursive;
+    	text-transform: lowercase;
+    	opacity: 0.7;
+    	bottom: 50px;
+    }
+    
+    ul#characters li:hover > img {
+    	width: 250px;
+    	height: 250px;
+    	margin: 0;
+    }
+    
+    .popup_block{
+    height:500px;
+    display:none;
+    padding:15px;
+    background:#823f75;
+    border:1px solid #231f2b;
+    float:left;
+    position:fixed;
+    top:50%;left:50%;
+    z-index: 99999;
+    -webkit-box-shadow: 0px 0px 20px #000; /* delete for solid white */
+    -moz-box-shadow: 0px 0px 20px #000; /* delete for solid white */
+    box-shadow: 0px 0px 20px #000; /* delete for solid white */
+}
+
+#fade {
+    display:none;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:9999;
+    background:#000; /* change to #fff for solid white */
+    opacity:0.5; /* change to opacity:1; */
+}
+
+/*POP UP BOX STUFF*/
+ 
+.largeimg {
+width:250px;
+height:500px;
+border-radius:10px;
+border: 1px solid #463e55;
+}
+ 
+#thing1 {
+width:260px;
+font-family: 'Euphoria Script', cursive;
+font-size:70px;
+text-shadow: 2px 2px 3px #000;
+float:right;
+text-align:center;
+transform:rotate(-6deg);
+}
+ 
+#aesthetic {
+width:250px;
+height:232px;
+font-family: 'Raleway', sans-serif;
+font-size:11px;
+letter-spacing:0px;
+font-weight: 300;
+color: #000;
+line-height:14px;
+background: #ccc;
+border: 1px solid #463e55;
+margin-top:10px;
+padding:5px;
+margin-left:268px;
+text-align: justify;
+overflow:auto;
+}
+ 
+.leftimg {
+width:110px;
+height:160px;
+position: static;
+border-radius:10px;
+transform:rotate(3deg);
+border: 1px solid #463e55;
+}
+ 
+.rightimg {
+width:110px;
+height:160px;
+position: static;
+border-radius:10px;
+transform:rotate(-4deg);
+margin-left:-5px;
+border: 1px solid #463e55;
+}
+ 
+#photos {
+width:260px;
+margin-left:285px;
+margin-top: -500px;
+}
+
+*html #fade {position: absolute;}
+*html .popup_block {position: absolute;}
+
+</style>
+</head>
+<body>
+
+<div id="box1" class="popup_block">
+<img src="https://i.imgur.com/XHacGKs.png" class="largeimg">
+
+<div id="thing1">Zachriel</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/2stAWz4.png" class="leftimg">
+<img src="https://i.imgur.com/JZAQZR9.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+<b>FULL  NAME  :</b>  Zachriel<br>
+<b>KNOWN  AS  :</b>  <ul><li>Zach
+                          <li>Zachi
+                          <li>Angel</ul>
+
+<b>BIRTHDATE  :</b>  November 11<br>
+<b>AGE  :</b>  as old as the universe<br>
+<b>GENDER  &  PRONOUNS  :</b>  female || she/her<br>
+<B>ORIENTATION  :</b>  demisexual || demiromantic<br>
+<B>ETHNICITY  :</b>  hispanic presenting<br>
+<B>BEING RACE  :</b>  Angel<br>
+<B>PLACE  OF  BIRTH  :</b> The Silver City<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles<br>
+<B>OCCUPATION  :</b> Angel of Memory <br>
+<B>EYE COLOR  :</b>  Copperish Hazel<br>
+<B>HAIR COLOR  :</b>  Brown to blonde, it somewhat changes depending on what she feels like<br>
+<B>HEIGHT  :</b>  5'6"<br>
+<B>BUILD  :</b>  Athletic, yet still somewhat curvy<br>
+<B>MARKINGS  :</b>  scar on her shoulder from a gunshot to her wing<br>
+<B>NOTEWORTHY TRAITS  :</b>  best puppy eyes ever<br>
+<B>FACE CLAIM(S)  :</b> Ana de Armas  <br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box2" class="popup_block">
+<img src="https://i.imgur.com/CcmPS9B.png" class="largeimg">
+
+<div id="thing1">Zadkiel</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/U5Xhvxu.png" class="leftimg">
+<img src="https://i.imgur.com/ySSmSMC.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Zadkiel<br>
+<b>KNOWN  AS  :</b>  <ul><li>Zads
+                         <li>Zady</ul>
+
+<b>BIRTHDATE  :</b>  March 15<br>
+<b>AGE  :</b>  as old as the universe<br>
+<b>GENDER  &  PRONOUNS  :</b>  male || he/him<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  hispanic presenting<br>
+<B>BEING RACE  :</b>  Angel<br>
+<B>PLACE  OF  BIRTH  :</b> The Silver City<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles<br>
+<B>OCCUPATION  :</b> archangel of  freedom, benevolence and mercy, and the Patron Angel of all who forgive <br>
+<B>EYE COLOR  :</b>  Dark brown<br>
+<B>HAIR COLOR  :</b>  Dark brown, almost black<br>
+<B>HEIGHT  :</b>  5'9"<br>
+<B>BUILD  :</b>  Athletic, quite strong<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  definitely the beard, and the curly hair, both salt and pepper<br>
+<B>FACE CLAIM(S)  :</b> Oscar Isaac<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box3" class="popup_block">
+<img src="https://i.imgur.com/5sJbWxx.png" class="largeimg">
+
+<div id="thing1">Camiel</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/v99CWhf.png" class="leftimg">
+<img src="https://i.imgur.com/X0GgqRG.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Camiel<br>
+<b>KNOWN  AS  :</b>  <ul><li>Cam
+                         <li>Cami
+                         <li>Self Appointed Guardian Angel</ul>
+
+<b>BIRTHDATE  :</b>  December 29<br>
+<b>AGE  :</b>  as old as the universe<br>
+<b>GENDER  &  PRONOUNS  :</b>  femme leaning gender fluid || she/her, for now<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  hispanic presenting<br>
+<B>BEING RACE  :</b>  Angel<br>
+<B>PLACE  OF  BIRTH  :</b> The Silver City<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles<br>
+<B>OCCUPATION  :</b> archangel of strength, courage and war <br>
+<B>EYE COLOR  :</b>  Dark brown<br>
+<B>HAIR COLOR  :</b>  Dark brown, with some blonde<br>
+<B>HEIGHT  :</b>  5'2"<br>
+<B>BUILD  :</b>  Athletic, quite strong, especially her arms<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  sarcastic and vulgar AF<br>
+<B>FACE CLAIM(S)  :</b> Jessica Camacho<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box4" class="popup_block">
+<img src="https://i.imgur.com/HZsPK9Q.png" class="largeimg">
+
+<div id="thing1">Ruslan</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/nY9YcdA.png" class="leftimg">
+<img src="https://i.imgur.com/7jwxiSt.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Ruslan Friedrich Dreschler<br>
+<b>KNOWN  AS  :</b>  <ul><li>Rus
+                         <li>Boss</ul>
+
+<b>BIRTHDATE  :</b>  September 22<br>
+<b>AGE  :</b>  44<br>
+<b>GENDER  &  PRONOUNS  :</b>  cis male || he/him<br>
+<B>ORIENTATION  :</b>  pansexual<br>
+<B>ETHNICITY  :</b>  African German<br>
+<B>BEING RACE  :</b>  Immortal Human<br>
+<B>PLACE  OF  BIRTH  :</b> Dachau, Germany<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles<br>
+<B>OCCUPATION  :</b> 'the cleaner' <br>
+<B>EYE COLOR  :</b>  Dark brown<br>
+<B>HAIR COLOR  :</b>  black, when he grows it out<br>
+<B>HEIGHT  :</b>  5'10.5"<br>
+<B>BUILD  :</b>  Very athletic, and built like a brick house<br>
+<B>MARKINGS  :</b>  many small chemical burns on his hands, a GSW on his right shoulder, a scar from a knife wound on his lower back left side.<br>
+<B>NOTEWORTHY TRAITS  :</b>  keeps his head shaves bald, and that smile!<br>
+<B>FACE CLAIM(S)  :</b>  Morris Chestnut<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box5" class="popup_block">
+<img src="https://i.imgur.com/oDFWvfN.png" class="largeimg">
+
+<div id="thing1">Claude</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/X7vV5XA.png" class="leftimg">
+<img src="https://i.imgur.com/CWOarrm.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Claude Hugo Weckman<br>
+<b>KNOWN  AS  :</b>  
+
+<b>BIRTHDATE  :</b>  May 19<br>
+<b>AGE  :</b>  42<br>
+<b>GENDER  &  PRONOUNS  :</b>  cis male || he/him<br>
+<B>ORIENTATION  :</b>  pansexual<br>
+<B>ETHNICITY  :</b>  German American<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b> Wiesbaden, Germany<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles<br>
+<B>OCCUPATION  :</b> Rus's right hand man<br>
+<B>EYE COLOR  :</b>  Light brown<br>
+<B>HAIR COLOR  :</b>  Dark brown, salt & pepper<br>
+<B>HEIGHT  :</b>  6'1"<br>
+<B>BUILD  :</b>  Very athletic, definitely works out<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  dimples from heaven<br>
+<B>FACE CLAIM(S)  :</b>  Eddie Cibrian<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box6" class="popup_block">
+<img src="https://i.imgur.com/jIZ38mK.png" class="largeimg">
+
+<div id="thing1">Chloe</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/dLhwd5v.png" class="leftimg">
+<img src="https://i.imgur.com/YQ8NCFb.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Chloe Jane Decker<br>
+<b>KNOWN  AS  :</b>  <ul><li>Detective Decker
+                         <li>Detective
+                         <li>Chloe
+                         <li>Mom
+                         <li>Decks
+                         <li>Chlo</ul>
+
+<b>BIRTHDATE  :</b>  November 6<br>
+<b>AGE  :</b>  39, turning 40<br>
+<b>GENDER  &  PRONOUNS  :</b>  cis female || she/her<br>
+<B>ORIENTATION  :</b>  pansexual<br>
+<B>ETHNICITY  :</b>  Caucasian American<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b> Santa Ana, California, USA<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles<br>
+<B>OCCUPATION  :</b> LAPD Detective<br>
+<B>EYE COLOR  :</b>  Blue<br>
+<B>HAIR COLOR  :</b>  Blonde mostly.<br>
+<B>HEIGHT  :</b>  5'7"<br>
+<B>BUILD  :</b>  Very athletic, but slender<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  Piercing stare<br>
+<B>FACE CLAIM(S)  :</b>  Lauren German<br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Lucifer<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box7" class="popup_block">
+<img src="https://i.imgur.com/NDbBRe1.png" class="largeimg">
+
+<div id="thing1">Gui</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/3Q6MkmL.png" class="leftimg">
+<img src="https://i.imgur.com/xM1Tub2.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Ghislain Olivier Marchand<br>
+<b>KNOWN  AS  :</b>  <ul><li>Gui (pronounced ghee)
+                         <li> Washboard</ul>
+
+<b>BIRTHDATE  :</b>  November 6<br>
+<b>AGE  :</b>  Looks 30 ish, is actually 392<br>
+<b>GENDER  &  PRONOUNS  :</b>  cis male || he/him<br>
+<B>ORIENTATION  :</b>  demisexual, must have that connection<br>
+<B>ETHNICITY  :</b>  Caucasian, French<br>
+<B>BEING RACE  :</b>  <s>Human Witch</s> Vampire<br>
+<B>PLACE  OF  BIRTH  :</b> Orleans, France<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles (flexible)<br>
+<B>OCCUPATION  :</b> "Hypnotherapist"<br>
+<B>EYE COLOR  :</b>  Blue<br>
+<B>HAIR COLOR  :</b>  Medium Brown<br>
+<B>HEIGHT  :</b>  6'<br>
+<B>BUILD  :</b>  Very athletic, dorito shaped.<br>
+<B>MARKINGS  :</b>  the crease between his eyebrows when he's holding conversation<br>
+<B>NOTEWORTHY TRAITS  :</b>  subtle sarcasm<br>
+<B>FACE CLAIM(S)  :</b>  Jason Dohring<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> A Mix of Lucifer and TVD based, fandomless<br>
+<B>LINK TO BIO  :</b> <a href="https://mercifulmemories.tumblr.com/gui"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box8" class="popup_block">
+<img src="https://i.imgur.com/I8UPSUo.png" class="largeimg">
+
+<div id="thing1">Rosalind</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/eadhf4z.png" class="leftimg">
+<img src="https://i.imgur.com/4G2WVEO.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Rosalind Foss<br>
+<b>KNOWN  AS  :</b>  <ul><li>Ros
+                         <li>M</ul>
+
+<b>BIRTHDATE  :</b>  August 20<br>
+<b>AGE  :</b>  72<br>
+<b>GENDER  &  PRONOUNS  :</b>  cis female || she/her<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  Caucasian, English<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b> Aycliffe, Dover, United Kingdom<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles (flexible)<br>
+<B>OCCUPATION  :</b> Chief of Special Operations, International Division, MI6, Stationed in LA, working out of the British Consolate.<br>
+<B>EYE COLOR  :</b>  Blue<br>
+<B>HAIR COLOR  :</b>  white<br>
+<B>HEIGHT  :</b>  5'1"<br>
+<B>BUILD  :</b>  Well kept for her age<br>
+<B>MARKINGS  :</b>  distinctive mole on the center of her forehead<br>
+<B>NOTEWORTHY TRAITS  :</b>  to the point, doesn't beat around the bush<br>
+<B>FACE CLAIM(S)  :</b>  Dame Judi Dench<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer & James Bond based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box9" class="popup_block">
+<img src="https://i.imgur.com/gtW2m59.png" class="largeimg">
+
+<div id="thing1">Darius</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/Td5O8N2.png" class="leftimg">
+<img src="https://i.imgur.com/xNoFF8R.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b>  Darius Graves<br>
+<b>KNOWN  AS  :</b>  
+
+<b>BIRTHDATE  :</b>  March 5<br>
+<b>AGE  :</b>  61, forever looks 18-20 ish<br>
+<b>GENDER  &  PRONOUNS  :</b>  male || he/him<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  Caucasian, English<br>
+<B>BEING RACE  :</b>  Immortal Human.... sort of<br>
+<B>PLACE  OF  BIRTH  :</b> <br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles (flexible)<br>
+<B>OCCUPATION  :</b> Musician, sort of<br>
+<B>EYE COLOR  :</b>  Blue<br>
+<B>HAIR COLOR  :</b>  white blonde<br>
+<B>HEIGHT  :</b>  6'2 1/2"<br>
+<B>BUILD  :</b>  Slender, lanky<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  awkward AF, with an asshole shell, but a good bean once you get to know him<br>
+<B>FACE CLAIM(S)  :</b>  Lucky Blue Smith<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box10" class="popup_block">
+<img src="https://i.imgur.com/B0Q8Jxc.png" class="largeimg">
+
+<div id="thing1">Yadriel</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/TQTUJhX.png" class="leftimg">
+<img src="https://i.imgur.com/y55zMqm.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Yadriel Canaan<br>
+<b>KNOWN  AS  :</b>  <ul><li> Yad
+                        <li> 'Beautiful Asshole'</ul>
+
+<b>BIRTHDATE  :</b>  January 18<br>
+<b>AGE  :</b>  hella old?<br>
+<b>GENDER  &  PRONOUNS  :</b>  male || he/him<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  Puerto Rican American<br>
+<B>BEING RACE  :</b>  Nephalem (half human, half angel)<br>
+<B>PLACE  OF  BIRTH  :</b> Rio Piedras, San Juan, Puerto Rico<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles (flexible)<br>
+<B>OCCUPATION  :</b> Done a lot of things over the years<br>
+<B>EYE COLOR  :</b>  Dark Brown<br>
+<B>HAIR COLOR  :</b>  Dark Brown<br>
+<B>HEIGHT  :</b>  5'9"<br>
+<B>BUILD  :</b>  Works out, but def a slight dad bod<br>
+<B>MARKINGS  :</b>  the longish hair usually is a give away?<br>
+<B>NOTEWORTHY TRAITS  :</b>  the sweetest dude you could know, loyal to a fault<br>
+<B>FACE CLAIM(S)  :</b>  Lin-Manuel Miranda<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box11" class="popup_block">
+<img src="https://i.imgur.com/SW3xybO.png" class="largeimg">
+
+<div id="thing1">Lilith</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/wlug0UL.png" class="leftimg">
+<img src="https://i.imgur.com/ax5MCos.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Lilith <br>
+<b>KNOWN  AS  :</b>  <ul><li> Mother of Demons</ul>
+
+<b>BIRTHDATE  :</b>  October 24<br>
+<b>AGE  :</b>  hella old?<br>
+<b>GENDER  &  PRONOUNS  :</b>  female || she/her<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  Easter European presenting<br>
+<B>BEING RACE  :</b>  Demon<br>
+<B>PLACE  OF  BIRTH  :</b> Garden of Eden<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles (flexible)<br>
+<B>OCCUPATION  :</b> Queen of Hell<br>
+<B>EYE COLOR  :</b>  Honey Brown, unless she's using her demon powers, then Black<br>
+<B>HAIR COLOR  :</b>  Dark Brown<br>
+<B>HEIGHT  :</b>  5'4"<br>
+<B>BUILD  :</b>  Very feminine, and slender<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  utterly batshit crazy<br>
+<B>FACE CLAIM(S)  :</b>  Anna Hopkins<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer & <b>slightly</b> Shadowhunters based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box12" class="popup_block">
+<img src="https://i.imgur.com/hT798un.png" class="largeimg">
+
+<div id="thing1">Holden</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/B2m4b1Q.png" class="leftimg">
+<img src="https://i.imgur.com/hZegRwC.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Holden James Marshall<br>
+<b>KNOWN  AS  :</b>  <ul><li> Marsh</ul>
+
+<b>BIRTHDATE  :</b> May 1<br>
+<b>AGE  :</b>  50<br>
+<b>GENDER  &  PRONOUNS  :</b>  cis male || he/him<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  African American<br>
+<B>BEING RACE  :</b>  Immortal human<br>
+<B>PLACE  OF  BIRTH  :</b> Chicago, Illinois, USA<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles (flexible)<br>
+<B>OCCUPATION  :</b> Black Ops Private Contractor<br>
+<B>EYE COLOR  :</b>  Honey Brown, unless she's using her demon powers, then Black<br>
+<B>HAIR COLOR  :</b>  Dark Brown<br>
+<B>HEIGHT  :</b>  6'1"<br>
+<B>BUILD  :</b>  Built like a brick house tbh<br>
+<B>MARKINGS  :</b>  distinctive goatee<br>
+<B>NOTEWORTHY TRAITS  :</b>  fun and playful, but very strict on the job<br>
+<B>FACE CLAIM(S)  :</b>  Shemar Moore<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Lucifer based, fandomless<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box13" class="popup_block">
+<img src="https://i.imgur.com/kSa1c3m.png" class="largeimg">
+
+<div id="thing1">Leia</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/0tTEVxV.png" class="leftimg">
+<img src="https://i.imgur.com/Z34h6A9.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> General Leia <s>Amidala Skywalker</s> Organa <s>Solo</s><br>
+<b>KNOWN  AS  :</b>  <ul><li> General
+                        <li> Princess
+                        <li> Your Worshipfulness
+                        <li> Your Worship
+                        <li> Your Highnessness
+                        <li> Your Highness
+                        <li> Sweetheart
+                        <li> <i>Sister</i>
+                        <li> Senator</ul>
+<b>BIRTHDATE  :</b> 19 BBY<br>
+<b>AGE  :</b>  Old enough to know better.<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  Caucasian<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b> Polis Massa<br>
+<B>CURRENT  RESIDENCE  :</b>  Somewhere in the universe<br>
+<B>OCCUPATION  :</b> <ul><li>Supreme commander of the Resistance<br>
+<li>Imperial Senator of Alderaan
+<li>Imperial Senate Ambassador
+<li>Princess of Alderaan</ul><br>
+<B>EYE COLOR  :</b>  dark brown<br>
+<B>HAIR COLOR  :</b>  Dark Brown, though greying now<br>
+<B>HEIGHT  :</b>  5'1"<br>
+<B>BUILD  :</b>  totally taken herself<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  Ultimate mom<br>
+<B>FACE CLAIM(S)  :</b>  Carrie Fisher<br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Star Wars<br>
+<B>LINK TO BIO  :</b> <a href="https://mercifulmemories.tumblr.com/leia"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box14" class="popup_block">
+<img src="https://i.imgur.com/US1Eq0f.png" class="largeimg">
+
+<div id="thing1">BB-8</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/TGuqK3I.png" class="leftimg">
+<img src="https://i.imgur.com/TRkafKT.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> BB-8<br>
+<b>KNOWN  AS  :</b>  <ul><li> Buddy
+                         <li> BB</ul>
+<b>BIRTHDATE  :</b> 29 ABY<br>
+<b>AGE  :</b>  Who cares!<br>
+<b>GENDER  &  PRONOUNS  :</b>   male || he/him?<br>
+<B>ORIENTATION  :</b>  nope<br>
+<B>ETHNICITY  :</b>  Droid?<br>
+<B>BEING RACE  :</b>  DROID!<br>
+<B>PLACE  OF  BIRTH  :</b> Hosnian Prime<br>
+<B>CURRENT  RESIDENCE  :</b>  Somewhere in the universe<br>
+<B>OCCUPATION  :</b>  Cutest droid in the universe<br>
+<B>EYE COLOR  :</b>  Red?<br>
+<B>HAIR COLOR  :</b>  <br>
+<B>HEIGHT  :</b>  2'2"<br>
+<B>BUILD  :</b>  very round<br>
+<B>MARKINGS  :</b>  distinctive white and orange markings<br>
+<B>NOTEWORTHY TRAITS  :</b>  sarcastic puppy!<br>
+<B>FACE CLAIM(S)  :</b>  <br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Star Wars<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box15" class="popup_block">
+<img src="https://i.imgur.com/DRTEpFs.png" class="largeimg">
+
+<div id="thing1">R2-D2</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/L180Ciu.png" class="leftimg">
+<img src="https://i.imgur.com/CzjaAQx.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> R2-D2<br>
+<b>KNOWN  AS  :</b>  <ul><li> Artoo</ul>
+
+<b>BIRTHDATE  :</b> Not sure, but around 32 BBY<br>
+<b>AGE  :</b>  Old enough<br>
+<b>GENDER  &  PRONOUNS  :</b>   male || he/him<br>
+<B>ORIENTATION  :</b>  nope<br>
+<B>ETHNICITY  :</b>  Droid<br>
+<B>BEING RACE  :</b>  Droid<br>
+<B>PLACE  OF  BIRTH  :</b> Naboo<br>
+<B>CURRENT  RESIDENCE  :</b>  Somewhere in the universe<br>
+<B>OCCUPATION  :</b>  saving 3-P0's ass forever<br>
+<B>EYE COLOR  :</b>  Red and blue<br>
+<B>HAIR COLOR  :</b>  <br>
+<B>HEIGHT  :</b>  3'6"<br>
+<B>BUILD  :</b>  garbage can shaped<br>
+<B>MARKINGS  :</b>  distinctive white, blue and silver<br>
+<B>NOTEWORTHY TRAITS  :</b>  tired old man<br>
+<B>FACE CLAIM(S)  :</b>  <br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Star Wars<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+
+<div id="box23" class="popup_block">
+<img src="https://imgur.com/9AWg0XP.png" class="largeimg">
+
+<div id="thing1">Lyra</div>
+
+<div id="photos">
+ 
+<img src="https://imgur.com/4SkzYi1.png" class="leftimg">
+<img src="https://imgur.com/5tUHDYI.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Lyra Erso<br>
+<b>KNOWN  AS  :</b>  <ul><li>Lyra Rehal (maiden name)
+                         <li>Jyn's mom, Galen's wife</ul>
+
+<b>BIRTHDATE  :</b> 47 BBY<br>
+<b>AGE  :</b> 34 years old<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  likely heterosexual, but never explored<br>
+<B>ETHNICITY  :</b>  caucasian<br>
+<B>BEING RACE  :</b> human<br>
+<B>PLACE  OF  BIRTH  :</b>  Aria Prime<br>
+<B>CURRENT  RESIDENCE  :</b>  Lah'mu<br>
+<B>OCCUPATION  :</b>  geologist, Galen's research assistant/field team coordinator<br>
+<B>EYE COLOR  :</b>  deep brown<br>
+<B>HAIR COLOR  :</b>  auburn<br>
+<B>HEIGHT  :</b>  5'6"<br>
+<B>BUILD  :</b>  slender but strong, a runner's build<br>
+<B>MARKINGS  :</b>  none, except clothing wise she keeps a red sash in honour of the Jedi<br>
+<B>NOTEWORTHY TRAITS  :</b>  bluntness of a dull spoon<br>
+<B>FACE CLAIM(S)  :</b>  valene kane<br>
+<B>CHARACTER TYPE  :</b> canon<br>
+<B>FANDOM  :</b> star wars<br>
+<B>LINK TO BIO  :</b> <a href="tba"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box16" class="popup_block">
+<img src="https://i.imgur.com/KI8mvbX.png" class="largeimg">
+
+<div id="thing1">Natasha</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/UJVa1r6.png" class="leftimg">
+<img src="https://i.imgur.com/Z45sGP7.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Natasha Romanova<br>
+<b>KNOWN  AS  :</b>  <ul><li> Nat
+                         <li> Romanoff
+                         <li> Black Widow
+                         <li> Natalie Rushman
+                         <li> Natalia Romanova
+                         <li> Laura Mathers
+                         <li> Mary Farrell
+                         <li> Yelena Belova
+                         <li> Oktober
+                         <li> The Notary
+                         <li> Master Assassin
+                         <li> Tatiana Sokolova
+                         <li> Alion Vans
+                         <li> Marya Konn
+                         <li> Irina Zlataryova
+                         <li> Audrey
+                         <li> Mewling Quim
+                         <li> Fräulein
+                         <li> Hawley
+                         <li> Honey
+                         <li> Daughter of Ivan
+                         <li> Liebchen</ul>
+
+<b>BIRTHDATE  :</b> September 9<br>
+<b>AGE  :</b>  Old enough<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  Caucasian<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b> Moscow, Russia<br>
+<B>CURRENT  RESIDENCE  :</b>  Los Angeles (flexible)<br>
+<B>OCCUPATION  :</b>  Avenger, Spy<br>
+<B>EYE COLOR  :</b>  Blue<br>
+<B>HAIR COLOR  :</b>  Vibrant red<br>
+<B>HEIGHT  :</b>  5'9"<br>
+<B>BUILD  :</b>  Feminine, and strong<br>
+<B>MARKINGS  :</b>  spattering of freckles on her cheeks<br>
+<B>NOTEWORTHY TRAITS  :</b>  judging you, always<br>
+<B>FACE CLAIM(S)  :</b>  Natalya Rudakova<br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Marvel<br>
+<B>LINK TO BIO  :</b> </b> <a href="https://mercifulmemories.tumblr.com/nat"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box17" class="popup_block">
+<img src="https://i.imgur.com/dzt3M4y.png" class="largeimg">
+
+<div id="thing1">Peggy</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/CUJgv5M.png" class="leftimg">
+<img src="https://i.imgur.com/u25wXdA.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Margaret Elizabeth Carter<br>
+<b>KNOWN  AS  :</b>  <ul><li> Peggy
+                         <li> Peg
+                         <li> Agent 13
+                         <li> Eva
+                         <li> 'Queen Victoria'
+                         <li> 'Your Majesty'
+                         <li> English
+                         <li> England
+                         <li> Ruth Barton
+                         <li> Miss Union Jack
+                         <li> Miss Wendy
+                         <li> Doctor Katherine Wexford
+                         </ul>
+
+<b>BIRTHDATE  :</b> April 9<br>
+<b>AGE  :</b>  Old enough<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  good question<br>
+<B>ETHNICITY  :</b>  Caucasian<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b>Hampstead, London, England, UK<br>
+<B>CURRENT  RESIDENCE  :</b>  New York (flexible)<br>
+<B>OCCUPATION  :</b>  Spy, SHIELD Agent, SSR Agent<br>
+<B>EYE COLOR  :</b>  Hazel<br>
+<B>HAIR COLOR  :</b>  Brown<br>
+<B>HEIGHT  :</b>  5'7"<br>
+<B>BUILD  :</b>  Feminine, and strong<br>
+<B>MARKINGS  :</b>  wide forehead<br>
+<B>NOTEWORTHY TRAITS  :</b>  'bossy', but usually right<br>
+<B>FACE CLAIM(S)  :</b>  Daisy Ridley<br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Marvel<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box18" class="popup_block">
+<img src="https://i.imgur.com/AC2Z5BY.png" class="largeimg">
+
+<div id="thing1">Penelope</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/l5Aslkx.png" class="leftimg">
+<img src="https://i.imgur.com/vPn1D36.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Penelope Grace Garcia<br>
+<b>KNOWN  AS  :</b>  <ul><li>Baby Girl
+                         <li>PG
+                         <li>Pen
+                         <li>The Black Queen
+                         <li>The Dirty Dozen
+                         <li>Penny</ul>
+
+<b>BIRTHDATE  :</b> July 2<br>
+<b>AGE  :</b> 44<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  pansexual demiromantic<br>
+<B>ETHNICITY  :</b>  Caucasian<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b> San Francisco, California, USA<br>
+<B>CURRENT  RESIDENCE  :</b>  Quantico, Virginia, USA (flexible)<br>
+<B>OCCUPATION  :</b>  FBI Special Agent (flexible)<br>
+<B>EYE COLOR  :</b>  Blue<br>
+<B>HAIR COLOR  :</b>  Usually blonde<br>
+<B>HEIGHT  :</b>  5'7" (minus the heels)<br>
+<B>BUILD  :</b>  Curvy<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b>  bubbly, and believes in the best of humanity<br>
+<B>FACE CLAIM(S)  :</b>  Kirsten Vangsness<br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Criminal Minds<br>
+<B>LINK TO BIO  :</b> <a href="https://mercifulmemories.tumblr.com/pen"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box19" class="popup_block">
+<img src="https://i.imgur.com/D8BvjR3.png" class="largeimg">
+
+<div id="thing1">Kristy</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/uDgz6Wk.png" class="leftimg">
+<img src="https://i.imgur.com/mOh1aSG.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Kristy Leanne Simmons<br>
+<b>KNOWN  AS  :</b>  <ul><li> Kris
+                         <li> Kiki
+                         <li> Mom</ul>
+
+<b>BIRTHDATE  :</b> July 24<br>
+<b>AGE  :</b> 37<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  fairly unexplored, but leans more towards bisexual<br>
+<B>ETHNICITY  :</b>  Caucasian, American<br>
+<B>BEING RACE  :</b>  Human<br>
+<B>PLACE  OF  BIRTH  :</b>  New Albany, Ohio, USA<br>
+<B>CURRENT  RESIDENCE  :</b>  Southbridge, Virginia, USA (flexible)<br>
+<B>OCCUPATION  :</b>  Counselor/Lawyer<br>
+<B>EYE COLOR  :</b>  Blue<br>
+<B>HAIR COLOR  :</b>  Auburn<br>
+<B>HEIGHT  :</b>  5'7 1/2" (yes the half matters)<br>
+<B>BUILD  :</b>  Fit and slim<br>
+<B>MARKINGS  :</b>  small scar on left temple from the hostage situation at the ADLC, right knee from an ACL injury needing surgery in college<br>
+<B>NOTEWORTHY TRAITS  :</b>  quick thinking on her feet, fun loving, logical<br>
+<B>FACE CLAIM(S)  :</b>  Kelly Frye<br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Criminal Minds<br>
+<B>LINK TO BIO  :</b> <a href="https://mercifulmemories.tumblr.com/kristy"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box20" class="popup_block">
+<img src="https://i.imgur.com/rezuFXB.png" class="largeimg">
+
+<div id="thing1">Jane</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/Eq0VApF.png" class="leftimg">
+<img src="https://i.imgur.com/V8AAIpo.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Jane Donatella Lillith Nicoletti<br>
+<b>KNOWN  AS  :</b>  <ul><li> Janie
+                         <li> Devil Child
+                         <li> Demon Child
+                         <li> Dear One</ul>
+
+<b>BIRTHDATE  :</b> July 18<br>
+<b>AGE  :</b> looks 18 or so, but is actually 762<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  doesn't matter<br>
+<B>ETHNICITY  :</b>  italian<br>
+<B>BEING RACE  :</b>  vampire<br>
+<B>PLACE  OF  BIRTH  :</b>  Frascati, Italy, and grew up in Rome<br>
+<B>CURRENT  RESIDENCE  :</b>  (flexible)<br>
+<B>OCCUPATION  :</b>  Guard in the Volturi<br>
+<B>EYE COLOR  :</b>  Red, occasionally black<br>
+<B>HAIR COLOR  :</b>  Dark brown<br>
+<B>HEIGHT  :</b>  5'8"<br>
+<B>BUILD  :</b>  Slim<br>
+<B>MARKINGS  :</b>  light freckles across the bridge of her nose<br>
+<B>NOTEWORTHY TRAITS  :</b>  apathetic, cray bitch tbh<br>
+<B>FACE CLAIM(S)  :</b>  Gracie Phillips<br>
+<B>CHARACTER TYPE  :</b> Canon<br>
+<B>FANDOM  :</b> Twilight<br>
+<B>LINK TO BIO  :</b> <a href="https://mercifulmemories.tumblr.com/jane"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box21" class="popup_block">
+<img src="https://i.imgur.com/Y0KmE9X.png" class="largeimg">
+
+<div id="thing1">Anzo</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/xzIj35Y.png" class="leftimg">
+<img src="https://i.imgur.com/qRfOeuS.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Anzo Saxe<br>
+<b>KNOWN  AS  :</b>  <ul></ul>
+
+<b>BIRTHDATE  :</b> November 1<br>
+<b>AGE  :</b> looks 25 or so, but is actually old enough to know better<br>
+<b>GENDER  &  PRONOUNS  :</b>   male || he/him<br>
+<B>ORIENTATION  :</b>  doesn't matter<br>
+<B>ETHNICITY  :</b>  caucasian<br>
+<B>BEING RACE  :</b>  warlock<br>
+<B>PLACE  OF  BIRTH  :</b>  Orlando, Florida<br>
+<B>CURRENT  RESIDENCE  :</b>  (flexible) New York<br>
+<B>OCCUPATION  :</b>  High Warlock of Queens<br>
+<B>EYE COLOR  :</b>  Blue-Grey, occasionally black<br>
+<B>HAIR COLOR  :</b>  Dark brown, though it varies on his mood<br>
+<B>HEIGHT  :</b>  6'<br>
+<B>BUILD  :</b>  Slim, with semi-broad shoulders<br>
+<B>MARKINGS  :</b>  Tattoo sleeve on both forearms<br>
+<B>NOTEWORTHY TRAITS  :</b>  apathetic, cray bitch tbh<br>
+<B>FACE CLAIM(S)  :</b>  Adam Lambert<br>
+<B>CHARACTER TYPE  :</b> Original<br>
+<B>FANDOM  :</b> Shadowhunters<br>
+<B>LINK TO BIO  :</b> tba
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box22" class="popup_block">
+<img src="https://imgur.com/n2tKgVN.png" class="largeimg">
+
+<div id="thing1">Hela</div>
+
+<div id="photos">
+ 
+<img src="https://i.imgur.com/zRArdOd.png" class="leftimg">
+<img src="https://i.imgur.com/vP7l33U.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Hela Lokisdottir<br>
+<b>KNOWN  AS  :</b>  <ul><li>Hel
+                         <li>Queen of Helheim</ul>
+                         
+<b>BIRTHDATE  :</b> July 15<br>
+<b>AGE  :</b> looks to be about 25 or so, but is in fact thousands of years old<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || they/them<br>
+<B>ORIENTATION  :</b>  doesn't matter<br>
+<B>ETHNICITY  :</b>  caucasian<br>
+<B>BEING RACE  :</b>  aesir<br>
+<B>PLACE  OF  BIRTH  :</b>  Asgard<br>
+<B>CURRENT  RESIDENCE  :</b>  (flexible) Helheim<br>
+<B>OCCUPATION  :</b>  Queen of the realm of Helheim<br>
+<B>EYE COLOR  :</b>  can shift from an icy blue grey to honey brown<br>
+<B>HAIR COLOR  :</b>  blonde<br>
+<B>HEIGHT  :</b>  5'4"<br>
+<B>BUILD  :</b>  slim, and feminine, with some curves<br>
+<B>MARKINGS  :</b>  how about the half dead skull-face, that she hides with glamour?<br>
+<B>NOTEWORTHY TRAITS  :</b>  great st staring blankly like she's not listening, but i assure you she is <br>
+<B>FACE CLAIM(S)  :</b>  Brianne Howey<br>
+<B>CHARACTER TYPE  :</b> Mostly Original tbh, but Myth mixed in<br>
+<B>FANDOM  :</b> mostly Marvel?<br>
+<B>LINK TO BIO  :</b> <a href="https://mercifulmemories.tumblr.com/hel"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div id="box24" class="popup_block">
+<img src="https://imgur.com/Zsg7fy2.png" class="largeimg">
+
+<div id="thing1">Alice</div>
+
+<div id="photos">
+ 
+<img src="https://imgur.com/dGT7Euu.png" class="leftimg">
+<img src="https://imgur.com/H4U82Zx.png" class="rightimg">
+ 
+</div>
+ 
+<div id="aesthetic">
+
+<b>FULL  NAME  :</b> Alice Enfield<br>
+<b>KNOWN  AS  :</b>  <ul><li>Al</li></ul>
+                         
+<b>BIRTHDATE  :</b> November 9<br>
+<b>AGE  :</b> late 50's<br>
+<b>GENDER  &  PRONOUNS  :</b>   female || she/her<br>
+<B>ORIENTATION  :</b>  doesn't matter<br>
+<B>ETHNICITY  :</b>  asian<br>
+<B>BEING RACE  :</b>  human<br>
+<B>PLACE  OF  BIRTH  :</b>  <br>
+<B>CURRENT  RESIDENCE  :</b>  <br>
+<B>OCCUPATION  :</b>  Inn Owner/Chef<br>
+<B>EYE COLOR  :</b>  dark brown<br>
+<B>HAIR COLOR  :</b>  black<br>
+<B>HEIGHT  :</b>  5'4"<br>
+<B>BUILD  :</b>  slim, but hardworking<br>
+<B>MARKINGS  :</b>  <br>
+<B>NOTEWORTHY TRAITS  :</b> very motherly<br>
+<B>FACE CLAIM(S)  :</b>  Michelle Yeoh<br>
+<B>CHARACTER TYPE  :</b> original from <a href="https://deavuota.carrd.co/#lore">tekhne's universe</a><br>
+<B>FANDOM  :</b> same as above<br>
+<B>LINK TO BIO  :</b> <a href="https://mercifulmemories.tumblr.com/alice"><b>Click here for bio</b></a>
+</div>
+ 
+</div></div></div></div></div></div></div></div></div></div></div>
+
+
+	<div id="header">
+		<div id="title">safe haven</div>
+		<ul id="nav">
+			<li><a href="/">Home</a></li>
+			<li><a href="/ask">Ask</a></li>
+			<div class="clear"></div>
+			<li><a href="https://katesgotabow.tumblr.com">main</a></li>
+			<li><a href="http://codewrites.tumblr.com/">©</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div id="container">
+		<ul id="characters">
+		<!-- BOX 1 -->
+			<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/ZwF54h0.png">
+				<div class="name"><a href="#?w=528" rel="box1" class="poplight">zachriel</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 2 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/3YySy55.png">
+				<div class="name"><a href="#?w=528" rel="box2" class="poplight">zadkiel</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 3 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/btMCGY5.png">
+				<div class="name"><a href="#?w=528" rel="box3" class="poplight">camiel</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 4 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/TZw12Qx.png">
+				<div class="name"><a href="#?w=528" rel="box4" class="poplight">rus</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 5 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/M4TgA5I.png">
+				<div class="name"><a href="#?w=528" rel="box5" class="poplight">claude</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 6 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/KWkEtNw.png">
+				<div class="name"><a href="#?w=528" rel="box6" class="poplight">chloe</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 7 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/sorOeex.png">
+				<div class="name"><a href="#?w=528" rel="box7" class="poplight">gui</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 8 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/hJezIqZ.png">
+				<div class="name"><a href="#?w=528" rel="box8" class="poplight">rosalind</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 9 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/nLJGsLL.png">
+				<div class="name"><a href="#?w=528" rel="box9" class="poplight">darius</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 10 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/VfHDjrS.png">
+				<div class="name"><a href="#?w=528" rel="box10" class="poplight">yadriel</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 10 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/V1oZoB5.png">
+				<div class="name"><a href="#?w=528" rel="box11" class="poplight">lilith</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 12 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/wenIcxC.png">
+				<div class="name"><a href="#?w=528" rel="box12" class="poplight">holden</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 13 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/H2FDhci.png">
+				<div class="name"><a href="#?w=528" rel="box13" class="poplight">leia</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 14 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/aRpJJqx.png">
+				<div class="name"><a href="#?w=528" rel="box14" class="poplight">bb-8</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 15 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/oha8see.png">
+				<div class="name"><a href="#?w=528" rel="box15" class="poplight">r2-d2</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 23 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://imgur.com/5DaF50Q.png">
+				<div class="name"><a href="#?w=528" rel="box23" class="poplight">lyra</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 16 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/Jsx8awb.png">
+				<div class="name"><a href="#?w=528" rel="box16" class="poplight">natasha</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 17 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/E7WckJM.png">
+				<div class="name"><a href="#?w=528" rel="box17" class="poplight">peggy</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 18 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/NxRlJHX.png">
+				<div class="name"><a href="#?w=528" rel="box18" class="poplight">penelope</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 19 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/sZ7ddkZ.png">
+				<div class="name"><a href="#?w=528" rel="box19" class="poplight">kristy</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 20 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/LX7wHui.png">
+				<div class="name"><a href="#?w=528" rel="box20" class="poplight">jane</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 21 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://i.imgur.com/50t4X5u.png">
+				<div class="name"><a href="#?w=528" rel="box21" class="poplight">anzo</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 22 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://imgur.com/npiyjvC.png">
+				<div class="name"><a href="#?w=528" rel="box22" class="poplight">hela</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		<!-- BOX 24 -->
+		<li class="all ">
+				<div class="bg"></div>
+		    	<img src="https://imgur.com/8iVYdZM.png">
+				<div class="name"><a href="#?w=528" rel="box24" class="poplight">alice</a></div>
+			
+			</li>    
+			</a>
+		<!-- END BOX -->
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+	$(document).ready(function () {
+	/**  BEGINNING OF IMAGE BACKGROUND
+	     Delete this section if you do not want an image background for                  characters.    **/
+		$("ul#characters li").each(function () {
+			var imageSource = $(this).children("img").attr("src");
+			$(this).children(".bg").css("background-image","url(" + imageSource + ")");
+		});
+		/**     END OF IMAGE BACKGROUND     **/
+		var activeFilters = [];
+		$("ul#dropdown li").not(".label").addClass("option");
+		$("ul#dropdown li:nth-child(2)").addClass("active");
+		$("ul#dropdown").click(function () {
+			$(this).siblings("#dropdown").children(".option").hide();
+			$(this).children(".option").slideToggle("fast");
+		});
+		$("ul#dropdown li.option").click(function () {
+			activeFilters = [];
+			$("ul#characters li").show();
+			$(this).siblings(".active").removeClass("active");
+			$(this).addClass("active");
+			label = $(this).text();
+			$(this).siblings(".label").text(label);
+			$("ul#dropdown li.active").each(function () {
+				currentVal = $(this).attr("value");
+				activeFilters.push(currentVal);
+			});
+			for (x = 0; x < activeFilters.length; x++) {
+				$("ul#characters li").not("." + activeFilters[x]).hide();
+			}
+		});
+	});
+</script>
+</body>
+
+
+</html>
