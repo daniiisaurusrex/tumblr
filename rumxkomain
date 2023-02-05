@@ -1,0 +1,1061 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<!-- octomoosey @ tumblr -->
+ 
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+<meta name="color:background" content="#656565">
+<meta name="color:containerbg" content="#656565">
+<meta name="color:postbg" content="#c3c3c3" />
+<meta name="color:postinfobg" content="#333333" />
+<meta name="color:toptitle" content="#333333" />
+<meta name="color:subtitle" content="#333333" />
+<meta name="color:scrollbar" content="#ffffff" />
+<meta name="color:italic" content="#a76a71" />
+<meta name="color:bold" content="#a76a71" />
+<meta name="color:title" content="#a76a71" />
+<meta name="color:text" content="#333333">
+<meta name="color:link" content="#a76a71">
+<meta name="color:linkhover" content="#ffffff">
+<meta name="color:mainnav" content="#ffffff">
+<meta name="color:mainnavhover" content="#a76a71">
+<meta name="color:nav" content="#ffffff">
+<meta name="color:description" content="#c3c3c3" />
+<meta name="color:descriptionbg" content="#333333" />
+<meta name="color:paginationtext" content="#ffffff" />
+<meta name="color:paginationlink" content="#ffffff" />
+<meta name="color:questiontext" content="#ffffff" />
+<meta name="color:questionlink" content="#333333" />
+<meta name="color:portraitbackground" content="#333333" />
+<meta name="color:portraitborder" content="#ffffff" />
+<meta name="color:tooltiptext" content="#ffffff" />
+<meta name="color:tooltipborder" content="#333333" />
+<meta name="color:tooltipbg" content="#000000" />
+<meta name="color:selectiontext" content="#ffffff" />
+<meta name="color:selectionbg" content="#8c8c8c" />
+<meta name="color:gradient1" content="#a76a71">
+<meta name="color:gradient2" content="#a8a8a8">
+
+<meta name="text:font size" content="10px" />
+<meta name="text:YOURBLOGNAME" content="" />
+<meta name="text:askpagetext" content="your ask page text goes here, write what you like and use the usual formatting!" />
+
+<meta name="text:subtitle" content="Throw me to the wolves and I'll return leading the pack." />
+
+<meta name="text:main link 01" content=""/>
+<meta name="text:main link 01 title" content="main link 1"/>
+<meta name="text:main link 02" content="">
+<meta name="text:main link 02 title" content="main link 2"/>
+<meta name="text:main link 03" content=""/>
+<meta name="text:main link 03 title" content="main link 3"/>
+<meta name="text:main link 04" content=""/>
+<meta name="text:main link 04 title" content="main link 4"/>
+<meta name="text:main link 05" content=""/>
+<meta name="text:main link 05 title" content="main link 5"/>
+
+<meta name="text:link 01" content=""/>
+<meta name="text:link 01 title" content="link 1"/>
+<meta name="text:link 02" content="">
+<meta name="text:link 02 title" content="link 2"/>
+<meta name="text:link 03" content=""/>
+<meta name="text:link 03 title" content="link 3"/>
+<meta name="text:link 04" content=""/>
+<meta name="text:link 04 title" content="link 4"/>
+<meta name="text:link 05" content=""/>
+<meta name="text:link 05 title" content="link 5"/>
+<meta name="text:link 06" content=""/>
+<meta name="text:link 06 title" content="link 6"/>
+<meta name="text:link 07" content=""/>
+<meta name="text:link 07 title" content="link 7"/>
+<meta name="text:link 08" content=""/>
+<meta name="text:link 08 title" content="link 8"/>
+<meta name="text:link 09" content=""/>
+<meta name="text:link 09 title" content="link 9"/>
+<meta name="text:link 10" content=""/>
+<meta name="text:link 10 title" content="link 10"/>
+<meta name="text:link 11" content=""/>
+<meta name="text:link 11 title" content="link 11"/>
+<meta name="text:link 12" content="">
+<meta name="text:link 12 title" content="link 12"/>
+<meta name="text:link 13" content=""/>
+<meta name="text:link 13 title" content="link 13"/>
+<meta name="text:link 14" content=""/>
+<meta name="text:link 14 title" content="link 14"/>
+<meta name="text:link 15" content=""/>
+<meta name="text:link 15 title" content="link 15"/>
+<meta name="text:link 16" content=""/>
+<meta name="text:link 16 title" content="link 16"/>
+<meta name="text:link 17" content=""/>
+<meta name="text:link 17 title" content="link 17"/>
+<meta name="text:link 18" content=""/>
+<meta name="text:link 18 title" content="link 18"/>
+<meta name="text:link 19" content=""/>
+<meta name="text:link 19 title" content="link 19"/>
+<meta name="text:link 20" content=""/>
+<meta name="text:link 20 title" content="link 20"/>
+
+<meta name="image:background" content="" />
+<meta name="image:header" content="" />
+<meta name="image:portrait1" content="" />
+<meta name="image:portrait2" content="" />
+<meta name="image:portrait3" content="" />
+<meta name="image:sidebar" content="" />
+<meta name="image:container" content="" />
+    
+<meta name="if:hidecaptions" content="0"/>
+<meta name="if:roundededges" content="1"/>
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+ 
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+ 
+<script>
+$(document).ready(function() {
+$('.tabs .tab-links a').on('click', function(e)  {
+var currentAttrValue = $(this).attr('href');
+$('.tabs ' + currentAttrValue).fadeIn(1000).siblings().hide();
+$(this).parent('li').addClass('active').siblings().removeClass('active');
+e.preventDefault();
+});
+});
+</script>
+ 
+<script>
+$(document).ready(function() {
+$('#filterOptions li a').click(function() {
+var ourClass = $(this).attr('class');
+$('#filterOptions li').removeClass('active');
+$(this).parent().addClass('active');
+if(ourClass == 'all') {
+$('#ourHolder').children('div.item').show();
+}
+else {
+$('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+$('#ourHolder').children('div.' + ourClass).show();
+}
+return false;
+});
+});
+</script>
+    
+</head>
+<style>
+
+#tumblr_lightbox {
+    background-color:rgba(255, 255, 255, .9)!important;
+    z-index:99999!important;}
+ 
+#tumblr_lightbox img {opacity:0;}
+ 
+#tumblr_lightbox_caption {
+    font-weight:normal!important;
+    text-shadow:none!important;}
+ 
+#tumblr_lightbox_center_image, #tumblr_lightbox_left_image, #tumblr_lightbox_right_image {
+    -moz-box-shadow:none!important;
+    -webkit-box-shadow:none!important;
+    box-shadow:none!important;
+    -moz-border-radius:0px!important;
+    -webkit-border-radius:0px!important;
+    border-radius:0px!important;
+    opacity:1!important;}
+ 
+#tumblr_lightbox_left_image, #tumblr_lightbox_right_image {opacity:.4!important;}
+ 
+iframe.tmblr-iframe.tmblr-iframe--desktop-loggedin-controls.iframe-controls--desktop, .tmblr-iframe {
+    position:fixed;
+    top:10px!important;
+    right:10px!important;
+    white-space:nowrap;
+    opacity:0.7;
+    transition: 0.7s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;}
+ 
+::-webkit-scrollbar{
+    height:3px;
+    width:3px;
+    background:inherit;}
+ 
+::-webkit-scrollbar-thumb {background:{color:scrollbar};}
+ 
+::-webkit-scrollbar-track {background:{color:pageborder};}
+ 
+::-moz-selection {
+    color:{color:selectiontext};
+    background:{color:selectionbg};}
+   
+::selection {
+    color:{color:selectiontext};
+    background:{color:selectionbg};}
+ 
+body {
+    margin:0;
+    font-size: {text:font size};
+    font-family: 'Roboto', sans-serif;
+    line-height:150%;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    color:{color:text};
+    background:{color:background};
+    background-image: url('{image:background}');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
+ 
+blockquote {
+    padding-left:10px;
+    border-left:1px solid {color:borders};
+    margin:15px 0px 10px 0px;
+    text-align:left;}
+ 
+.caption blockquote {
+    margin:15px 0px 10px 0px;}
+   
+blockquote img {
+    max-width:100%;
+    height:auto;}
+   
+img {
+    max-width:100%;
+    height:auto;}
+   
+.caption img {
+    max-width:100%;
+    height:auto;}
+   
+.posts img {
+    max-width:100%;
+    margin-top:5px;
+    margin-bottom:5px;}
+    
+.caption {
+    margin-top:15px;
+    {block:ifhidecaptions}
+    {block:indexpage}
+    display:none;
+    {/block:indexpage}
+    {/block:ifhidecaptions}}       
+ 
+a {
+    color:{color:link};
+    text-decoration:none;
+    letter-spacing:1px;
+    cursor:help;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}
+ 
+a:hover {
+    letter-spacing:1px;
+    text-decoration:none;
+    color:{color:linkhover};}
+ 
+p {
+    margin:10px 0 10px 0;}
+ 
+p:first-of-type {
+    margin-top:0;
+    padding-top:0;}
+ 
+p:last-of-type {
+    margin-bottom:10px;
+    padding-bottom:0;}
+   
+small, sub, sup {
+    font-size: {text:font size};
+    vertical-align:baseline;}
+   
+pre {
+    white-space: pre-wrap;      
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;    
+    white-space: -o-pre-wrap;  
+    word-wrap: break-word;}
+ 
+h1, h3, h4, h5, h6 {
+    text-align:center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:15px;}
+    
+h2 {
+    font-size:15px;
+    font-family: 'Share Tech', sans-serif;
+    font-weight:700;
+    margin:0px 0px 10px 0px;
+    color:{color:title};}    
+   
+b, strong {
+    font-family: 'Share Tech', sans-serif;
+    text-transform:uppercase;
+    font-size: {text:body font size};
+    color:{color:bold};}
+ 
+i, em {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 14px;
+    color:{color:italic};
+    letter-spacing:1.5px;}
+    
+ol.notes {
+    width:400px;
+    list-style-type:none;
+    text-align:left;
+    padding:0px;
+    margin:0px;}
+ 
+ol.notes li.note {
+    display:block;
+    padding:0;
+    margin:5px 0;}
+ 
+ol.notes li.note img.avatar {display:none!important;}
+ 
+a.more_notes_link {
+    display:block;
+    text-align:center;
+    border:0;
+    color:{color:title};}     
+    
+#containerbg {
+{block:ifroundededges}    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+{/block:ifroundededges}    
+    position:fixed;
+    padding:5px;
+    width:930px;
+    height:520px;
+    background: -moz-linear-gradient(left, {color:gradient1}; 0%, {color:gradient2} 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, {color:gradient1}), color-stop(100%, {color:gradient2}));
+background: -webkit-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -o-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -ms-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: linear-gradient(to right, {color:gradient1} 0%, {color:gradient2} 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{color:gradient1}', endColorstr='{color:gradient2}', GradientType=1 );
+    left:50%;
+    margin-left:-470px;
+    top:50%;
+    margin-top:-265px;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}  
+
+#container {
+{block:ifroundededges}    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+{/block:ifroundededges}    
+    position:fixed;
+    padding:5px;
+    width:910px;
+    height:500px;
+    background:{color:containerbg};
+    background-image: url('{image:container}');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    left:50%;
+    margin-left:-460px;
+    top:50%;
+    margin-top:-255px;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}      
+
+#content {
+    position:absolute;
+    margin-top:120px;
+    margin-bottom:50px;
+    margin-left:450px;
+    height:360px;
+    overflow-y:scroll;
+    width:453px;}
+
+.post {
+    background:{color:postbg};
+    text-align:left;
+    padding:20px;
+    width:400px;
+    display:block;
+    -webkit-box-shadow: 5px 0px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 0px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 0px 10px 2px rgba(0,0,0,0.5);
+    opacity:0;  
+    -webkit-animation:fadeIn ease-in 1;  
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;}  
+    
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+   opacity:0;
+   -webkit-animation:fadeIn ease-in 1;
+   -moz-animation:fadeIn ease-in 1;
+   animation:fadeIn ease-in 1;
+   -webkit-animation-fill-mode:forwards;
+   -moz-animation-fill-mode:forwards;
+   animation-fill-mode:forwards;
+   -webkit-animation-duration:1s;
+   -moz-animation-duration:1s;
+   animation-duration:1s;}
+   
+.fade-in.one {
+   -webkit-animation-delay:0s;
+   -moz-animation-delay:0s;
+   animation-delay:0s;}    
+    
+.tabbox {
+{block:ifroundededges}        
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+{/block:ifroundededges}    
+    background:{color:postbg};
+    text-align:left;
+    padding:20px;
+    width:400px;
+    display:block;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}
+    
+#topbar {
+{block:ifroundededges}    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+{/block:ifroundededges}    
+    position:fixed;
+    height:80px;
+    background:#eee;
+    background-image: url('{image:header}');
+    width:870px;
+    margin-top:20px;
+    margin-left:20px;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);} 
+    
+#toptitle {
+    margin-top:5px;
+    position:fixed;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:{color:toptitle};
+    text-transform:uppercase;
+    font-size:30px;
+    padding:20px;
+    text-shadow: 0px 0px 3px #fff;} 
+
+#subtitle {
+    margin-top:10px;
+    position:fixed;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:{color:subtitle};
+    text-transform:none;
+    font-size:12px;} 
+
+#portrait1 {
+    position:absolute;
+    float:left;
+    margin-top:5px;
+    right:5px;}
+
+#portrait1 img { 
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding:5px;
+    background:{color:portraitbackground};
+    border: solid 3px {color:portraitborder};
+    height:55px;} 
+    
+#portrait2 {
+    position:absolute;
+    float:left;
+    margin-top:15px;
+    right:65px;}
+
+#portrait2 img { 
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding:4px;
+    background:{color:portraitbackground};
+    border: solid 3px {color:portraitborder};
+    height:35px;}     
+    
+#portrait3 {
+    position:absolute;
+    float:left;
+    margin-top:45px;
+    right:55px;}
+
+#portrait3 img { 
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding:3px;
+    background:{color:portraitbackground};
+    border: solid 3px {color:portraitborder};
+    height:22px;}     
+    
+#sidebar {
+{block:ifroundededges}    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+{/block:ifroundededges}    
+    margin-top:120px;
+    position:fixed;
+    height:360px;
+    width:150px;
+    background:#000;
+    margin-left:20px;
+    opacity:0; 
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}    
+ 
+#sidebar:hover {
+    opacity:0.9;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}
+    
+#sidebarimage {
+{block:ifroundededges}    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+{/block:ifroundededges}    
+    margin-top:120px;
+    position:fixed;
+    height:360px;
+    width:150px;
+    background-image: url('{image:sidebar}');
+    margin-left:20px;
+    background-repeat: repeat;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}
+    
+#sidebarimagetext {
+    width:110px;
+    background: -moz-linear-gradient(left, {color:gradient1}; 0%, {color:gradient2} 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, {color:gradient1}), color-stop(100%, {color:gradient2}));
+background: -webkit-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -o-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -ms-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: linear-gradient(to right, {color:gradient1} 0%, {color:gradient2} 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{color:gradient1}', endColorstr='{color:gradient2}', GradientType=1 );
+    color:{color:paginationtext};
+    bottom:20px;
+    left:20px;
+    font-family: 'Share Tech', sans-serif;
+    position:absolute;
+    text-align:center;
+    font-size:10px;
+    text-transform:uppercase;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}    
+
+#sidebar:hover #sidebarimagetext {
+    opacity:0;} 
+
+#description {
+    {block:ifroundededges}
+{/block:ifroundededges}    
+    line-height:130%;
+    text-align:center;
+    background:#fff;
+    position:fixed;
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 190px;
+    height: 320px;
+    padding: 20px;
+    color:{color:description};
+    background:{color:descriptionbg};
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}
+
+.date {
+{block:ifroundededges}    
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+{/block:ifroundededges}    
+    font-family: 'Share Tech', sans-serif;
+    background:{color:postinfobg};
+    padding:10px;
+    margin-top:0px;
+    text-align:right;
+    font-size:9px;
+    text-transform:uppercase;
+    width:420px;
+    -webkit-box-shadow: 5px 0px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 0px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 0px 10px 2px rgba(0,0,0,0.5);}
+
+.date a {
+    margin-right:3px;
+    color:{color:link};
+    border-bottom:1px solid {color:text};}
+
+.date a:hover {
+    color:{color:linkhover};} 
+
+.information {
+{block:ifroundededges}    
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+{/block:ifroundededges}    
+    font-family: 'Share Tech', sans-serif;
+    background:{color:postinfobg};
+    padding:10px;
+    margin-top:0px;
+    text-align:right;
+    font-size:9px;
+    text-transform:uppercase;
+    width:420px;
+    margin-bottom:20px;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}
+
+.information a {
+    margin-right:3px;
+    color:{color:link};
+    border-bottom:1px solid {color:text};}
+
+.information a:hover {
+    color:{color:linkhover};} 
+
+.titlequote {
+    text-transform:uppercase;}
+
+.source {
+    text-align:center;}
+
+.question {
+    color:{color:questiontext};
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    color:#fff;
+    background: -moz-linear-gradient(left, {color:gradient1}; 0%, {color:gradient2} 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, {color:gradient1}), color-stop(100%, {color:gradient2}));
+background: -webkit-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -o-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -ms-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: linear-gradient(to right, {color:gradient1} 0%, {color:gradient2} 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{color:gradient1}', endColorstr='{color:gradient2}', GradientType=1 );
+    padding:20px;
+    margin-bottom:10px;}
+    
+.question a {
+    color:{color:questionlink};}    
+
+.asker {
+    text-transform:uppercase;
+    font-size:12px;}
+
+.chat ul {
+    display:block;
+    list-style:none;
+    margin-left:-40px;}
+
+.chat li {
+    padding:3px;
+    display:block;}
+
+.tumblr_audio_player {
+    width:250px;
+    height:30px; 
+    margin-top:-2px;}
+ 
+.player {
+    width:75px;
+    height:25px;
+    display:block;
+    overflow:hidden;}
+ 
+.hold {
+    background:#e4e4e4;
+    display:block;
+    opacity:.7;
+    padding:15px;}
+ 
+.audio_info {
+    padding:15px 0;
+    border-bottom:1px solid {color:borders};}
+
+#pagination {
+    width:200px;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    color:#fff;
+    background: -moz-linear-gradient(left, {color:gradient1}; 0%, {color:gradient2} 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, {color:gradient1}), color-stop(100%, {color:gradient2}));
+background: -webkit-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -o-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -ms-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: linear-gradient(to right, {color:gradient1} 0%, {color:gradient2} 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{color:gradient1}', endColorstr='{color:gradient2}', GradientType=1 );
+    color:{color:paginationtext};
+    bottom:20px;
+    font-family: 'Share Tech', sans-serif;
+    position:absolute;
+    text-align:center;
+    font-size:10px;
+    text-transform:uppercase;
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);}
+
+#pagination a {
+    color:{color:paginationlink};}    
+
+#s-m-t-tooltip {
+    max-width:300px;
+    border-radius: 0px;
+    padding:4px;
+    margin:15px 15px 5px 0px;
+    color:{color:tooltiptext};
+    border:1px solid {color:tooltipborder};
+    font-size:10px;
+    letter-spacing:1px;
+    background:{color:tooltipbg};
+    font-family: 'Share Tech', sans-serif;
+    z-index:99999;}
+  
+#credit {
+    z-index:8;
+    bottom:-3px;
+    right:3px;
+    height:30px;
+    width:30px;
+    opacity:0.8;
+    position:fixed;
+    padding:5px;}  
+    
+.tab {
+    display:none;}
+ 
+.tab.active {
+    display:block;}    
+
+.tab-links:after {
+    display:inline-block;
+    clear:both;
+    content:'';
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    border-radius:100%;}
+ 
+.tab-links li {
+    font-family: 'Share Tech', sans-serif;
+    margin:0px;
+    display:block;
+    list-style:none;
+    z-index:-999;}
+ 
+.tab-links {
+    position:absolute;
+    margin-top:25px;
+    padding:0px;
+    z-index:999999;
+    margin-bottom:-170px;} 
+ 
+.tab-links a {
+    color:{color:mainnav};
+    width:130px;
+    display:block;
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    padding:9px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}
+ 
+.tab-links a:hover {
+    color:{color:mainnavhover};
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;} 
+ 
+li.active a, li.active a:hover {
+    color:{color:mainnavhover};
+    letter-spacing:3px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}
+    
+.pglink {
+    display:block;
+    font-family: 'Share Tech', sans-serif;}	
+
+.pglink a {
+    font-size:11px;
+    padding:3px;
+    text-align:center;
+    display:block;
+    color:{color:nav};
+    margin-bottom:3px;
+    background: -moz-linear-gradient(left, {color:gradient1}; 0%, {color:gradient2} 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, {color:gradient1}), color-stop(100%, {color:gradient2}));
+background: -webkit-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -o-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: -ms-linear-gradient(left, {color:gradient1} 0%, {color:gradient2} 100%);
+background: linear-gradient(to right, {color:gradient1} 0%, {color:gradient2} 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{color:gradient1}', endColorstr='{color:gradient2}', GradientType=1 );
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}
+
+.pglink a:hover {
+    letter-spacing:2px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;}	    
+    
+table {}
+
+table img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height:70px;
+    width:70px;}
+
+.tdimg {
+    width:90px;}
+
+.tdtext {}   
+
+</style>
+<body>
+<div id="containerbg"></div>
+<div id="container">
+<div id="topbar"><div id="toptitle">{title}<div id="subtitle">{text:subtitle}</div></div>
+<div id="portrait1"><a href="/"><img src="{image:portrait1}"/></a></div>
+<div id="portrait2"><a href="/"><img src="{image:portrait2}"/></a></div>
+<div id="portrait3"><a href="/"><img src="{image:portrait3}"/></a></div>
+</div>
+<div id="sidebarimage"><div id="sidebarimagetext">hover for links</div></div>
+<div id="sidebar">
+<div class="tabs"> 
+<ul class="tab-links">
+<li class="active"><a href="/">home</a></li>
+<li><a href="/ask">ask</a></li>
+<li><a href="#tab3">navigation</a></li>
+<li>{block:ifmainlink01title}<a href="{text:main link 01}">{text:main link 01 title}</a>{/block:ifmainlink01title}</li>
+<li>{block:ifmainlink02title}<a href="{text:main link 02}">{text:main link 02 title}</a>{/block:ifmainlink02title}</li>
+<li>{block:ifmainlink03title}<a href="{text:main link 03}">{text:main link 03 title}</a>{/block:ifmainlink03title}</li>
+<li>{block:ifmainlink04title}<a href="{text:main link 04}">{text:main link 04 title}</a>{/block:ifmainlink04title}</li>
+<li>{block:ifmainlink05title}<a href="{text:main link 05}">{text:main link 05 title}</a>{/block:ifmainlink05title}</li>
+<li><a href="/archive">archive</a></li>
+
+</ul>
+</div>
+
+</div>
+
+<div id="description">
+{description}
+<div id="pagination">
+{block:Pagination}{block:PreviousPage}<a href="{PreviousPage}">back</a> - {/block:PreviousPage} page {CurrentPage} of {TotalPages}{block:NextPage} - <a href="{NextPage}">next</a>
+{/block:NextPage}
+{/block:Pagination}</div>
+</div>
+
+<div class="tabs">
+ 
+<div id="tab1" class="tab active">
+<div id="content">
+{block:posts}
+
+<div class="date">
+{block:Date} 
+<a href="{permalink}">{DayOfWeek}</a>
+{/block:Date}
+
+{block:NoteCount}<a href="{permalink}">{NoteCount}</a>{/block:NoteCount}
+{block:RebloggedFrom}
+<a href="{ReblogParentURL}">via</a>
+<a href="{ReblogRootURL}">source</a>
+{/block:RebloggedFrom}
+</div>
+<div class="post">
+
+{block:Quote}
+<div class="titlequote">{Quote}</div>
+{block:Source}<div class="source">{Source}</div>{/block:Source}
+{/block:Quote}
+ 
+{block:Text}
+{block:Title}<h2>{Title}</h2>{/block:Title}
+{Body}
+{/block:Text}
+ 
+{block:Link}
+<h2><a href="{URL}">{Name}</a></h2>
+{block:Description}{Description}{/block:Description}
+{/block:Link}
+ 
+{block:Chat}
+{block:Title}<h2>{Title}</h2>{/block:Title}
+<ol class="chat">
+{block:Lines}
+<li class="l {Alt}">{block:Label}<span class="label">{Label}</span>{/block:Label} {Line}</li>
+{/block:Lines}
+</ol>
+{/block:Chat}
+ 
+<center>{Block:Photo}{LinkOpenTag}
+<img src="{PhotoURL-400}" alt="{PhotoAlt}"/>{LinkCloseTag}{/Block:Photo}</center>
+ 
+<center>{block:Photoset}<div class="media">{photoset}</div>{/block:Photoset}</center>
+ 
+<center>{block:Video}{Video-400}{/block:Video}</center>
+ 
+{block:Panorama}
+{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+{/block:Panorama}
+ 
+{block:Audio}{block:AudioPlayer}<div class="hold"><div class="player">{AudioPlayergrey}</div></div>{/block:AudioPlayer}<div class="audio_info">{block:TrackName}{TrackName}{/block:TrackName}{block:Artist} by {Artist}{/block:Artist}</div>
+{/block:Audio}
+ 
+{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+                        
+{block:Answer}
+<div class="question">
+<div class="asker">{Asker} asked -</div> {question}</div>{answer}{/block:Answer}
+                        
+</div>
+
+<div class="information">
+{block:HasTags}{block:Tags} <a href="{TagURL}">{Tag}</a>{/block:Tags}
+{/block:HasTags}
+</div>
+
+{block:PostNotes}
+<div class="pagenotes">{PostNotes}</div>
+{/block:PostNotes}
+
+{/block:posts}
+</div></div>
+ 
+<div id="tab2" class="tab">
+<div id="content">
+<div class="tabbox">
+{text:askpagetext}<br><hr><br>
+<p><iframe frameborder="0" height="260" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{text:YOURBLOGNAME}.tumblr.com" width="100%" style="background-color: transparent; overflow: hidden;"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]--></p>
+</div></div>
+</div>
+ 
+<div id="tab3" class="tab">
+<div id="content">
+<div class="tabbox">
+<div class="pglink">
+{block:iflink01title}<a href="{text:link 01}">{text:link 01 title}</a>{/block:iflink01title}
+{block:iflink02title}<a href="{text:link 02}">{text:link 02 title}</a>{/block:iflink02title}
+{block:iflink03title}<a href="{text:link 03}">{text:link 03 title}</a>{/block:iflink03title}
+{block:iflink04title}<a href="{text:link 04}">{text:link 04 title}</a>{/block:iflink04title}
+{block:iflink05title}<a href="{text:link 05}">{text:link 05 title}</a>{/block:iflink05title}
+{block:iflink06title}<a href="{text:link 06}">{text:link 06 title}</a>{/block:iflink06title}
+{block:iflink07title}<a href="{text:link 07}">{text:link 07 title}</a>{/block:iflink07title}
+{block:iflink08title}<a href="{text:link 08}">{text:link 08 title}</a>{/block:iflink08title}
+{block:iflink09title}<a href="{text:link 09}">{text:link 09 title}</a>{/block:iflink09title}
+{block:iflink10title}<a href="{text:link 10}">{text:link 10 title}</a>{/block:iflink10title}
+{block:iflink11title}<a href="{text:link 11}">{text:link 11 title}</a>{/block:iflink11title}
+{block:iflink12title}<a href="{text:link 12}">{text:link 12 title}</a>{/block:iflink12title}
+{block:iflink13title}<a href="{text:link 13}">{text:link 13 title}</a>{/block:iflink13title}
+{block:iflink14title}<a href="{text:link 14}">{text:link 14 title}</a>{/block:iflink14title}
+{block:iflink15title}<a href="{text:link 15}">{text:link 15 title}</a>{/block:iflink15title}
+{block:iflink16title}<a href="{text:link 16}">{text:link 16 title}</a>{/block:iflink16title}
+{block:iflink17title}<a href="{text:link 17}">{text:link 17 title}</a>{/block:iflink17title}
+{block:iflink18title}<a href="{text:link 18}">{text:link 18 title}</a>{/block:iflink18title}
+{block:iflink19title}<a href="{text:link 19}">{text:link 19 title}</a>{/block:iflink19title}
+{block:iflink20title}<a href="{text:link 20}">{text:link 20 title}</a>{/block:iflink20title}    
+</div>
+</div></div></div>
+
+</div></div></div>
+
+<div id="credit"><a href="https://octomoosey.tumblr.com/" title="theme by octomoosey"><img src="https://static.tumblr.com/uopakca/cwDo0y64u/octopus-24.png"></a></div>
+    
+
+
+{block:ContentSource}
+<!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}"
+width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}   
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/fiw4iub/4jdnu5ta4/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script>
+</html>
