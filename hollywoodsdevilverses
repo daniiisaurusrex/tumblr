@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+ 
+ 
+▪ ▪ ▪ ▪ ▪ ▪ { Pʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ ʀᴇᴍᴏᴠᴇ ᴄʀᴇᴅɪᴛs!
+ 
+  ___  ___   ___   ___  ___    ___ __   __
+ / __|/ _ \ |   \ | __|/ __|  | _ )\ \ / /
+| (__| (_) || |) || _| \__ \  | _ \ \ V /
+ \___|\___/ |___/ |___||___/  |___/  |_|  
+ ___   ___   _  _  ___   ___   ___   ___  
+| _ \ / _ \ | || || _ \ / _ \ | _ \ / _ \
+|  _/| (_) || __ ||   /| (_) ||   /| (_) |
+|_|   \___/ |_||_||_|_\ \___/ |_|_\ \___/
+ 
+                                     
+★ http://pohroro.tumblr.com } ▪ ▪ ▪ ▪ ▪ ▪
+
+ 
+ 
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>desire shouldn't be contained, it's unnatural.</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Meddon" rel="stylesheet">
+    
+<style type="text/css">
+    
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: cinzel; /*body font*/
+    background: #001b2f; /*body background color*/
+}
+
+a {
+    color: #ffeff0; /*link color*/
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+}
+
+#header img {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-top: 100px;
+}
+    
+#title {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffeff0; /*title color*/
+}
+    
+#title:first-letter {
+    color: #c40002; /*first letter of the title's color*/
+}
+    
+#navigation {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+    
+#navigation a {
+    margin: 0px 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted;
+    border-color: #c40002; /*body background color*/
+}
+    
+#navigation a:hover {
+    border-bottom: 2px dotted;
+    border-color: #fb9d28; /*hover navigation underline color*/
+    color: #848784; /*hover navigation color*/
+}
+
+table {
+    width: auto;
+    height: 340px;
+    bottom: 0px;
+    left: 0px;
+    overflow-x: scroll;
+    margin: 0px;
+    position: absolute;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+    
+td {
+    height: 340px;
+    width: 455px;
+    background-position: center;
+}
+
+.number {
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 8px;
+    letter-spacing: -2px;
+    z-index: 1;
+    color: #ffeff0; /*member number color*/
+}
+    
+.info {
+    height: 340px;
+    width: 455px;
+    background: #001b2f; /*member information background color*/
+    opacity: 0;
+    z-index: 0;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+    
+td:hover .info {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-top: 140px;
+}
+
+.name a {
+    color: #FFeff0; /*member name color*/
+    display: inline-block;
+    border: 2px solid;
+    border-color: #fb9d28; /*member name border color*/
+    padding: 5px 25px;
+}
+    
+.name a:hover {
+    background: #c40002; /*hover member name border background color*/
+    color: #FFeff0; /*hover member name color*/
+}
+    
+.description {
+    font-size: 8px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0px 50px;
+    font-weight: 400;
+    color: #Ffeff0; /*member description color*/
+    line-height: 15px;
+}
+    
+::-webkit-scrollbar {
+    height: 7px;
+    background: #001b2f;
+}
+    
+::-webkit-scrollbar-thumb:horizontal {
+    background: #fb9d28; /*scrollbar color*/
+}
+/* Credits to http://pohroro.tumblr.com */
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<!--change avatar image here--><img src="https://i.ibb.co/yYrSyYt/avatar1.png">
+<div id="title">Old Scratch</div>
+<div id="navigation">
+<!--edit navigation here"--><a href="/">HOME</a> / <a href="/ask">INQUIRIES</a> / <a href="/NAVIGATION">NAVIGATION</a> / <a href="http://pohroro.com">CREDIT</a>
+</div>
+</div>
+    
+<table>
+<tr>
+    
+<!--start of one member-->
+    
+<td style="
+background: url(https://i.ibb.co/wMRyvYK/4fd18786-4663-41c0-ace0-868d1e2d15cb.jpg);
+background-position: center;">
+<div class="number"><!--change number-->01.</div>
+<div class="info">
+<div class="name">
+<!--change member url--><a href=>
+<!--change member name-->Main
+</a></div>
+<div class="description"><!--change member description-->Lucifer owns LUX, consults for the LAPD with Detective Decker. Most threads will be put in this verse.</div>
+</div>
+</td>
+    
+<!--end of one member-->
+    
+<!--start of one member-->
+    
+<td style="
+background: url(https://i.ibb.co/YTsTYpN/Large-EJ-175.jpg);
+background-position: center;">
+<div class="number"><!--change number-->02.</div>
+<div class="info">
+<div class="name">
+<!--change member url--><a href="">
+<!--change member name-->TBA
+</a></div>
+<div class="description">Verse TBA if needed.</div>
+</div>
+</td>
+    
+<!--end of one member-->
+    
+</tr>
+</table>
+</body>
+</html>
