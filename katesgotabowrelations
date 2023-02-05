@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+ 
+<!----------------------
+ 
+        CHARACTER MASTERLIST #5 by JAKEHELPS
+                #1: Do not redistribute & claim as your own.
+                #2: Do not remove the credit.
+ 
+                ---------------------------->
+               
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ 
+<title>relationships</title>
+<link rel="descriptioncut icon" href="{Favicon}" />
+ 
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+ 
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#vertical div.wrap").hover(function(){
+        $(this).stop().animate({top:"-260px"},{queue:false,duration:300});
+    }, function() {
+        $(this).stop().animate({top:"0px"},{queue:false,duration:300});
+    });
+});
+ 
+$(document).ready(function() {
+        $('.type-1').click(function() {
+                $('.character-type-1').fadeTo('slow', 1);
+                $('.character-type-2').fadeTo('slow', 0.1);
+                $('.character-type-3').fadeTo('slow', 0.1);
+        });
+        $('.type-2').click(function() {
+                $('.character-type-2').fadeTo('slow', 1);
+                $('.character-type-1').fadeTo('slow', 0.1);
+                $('.character-type-3').fadeTo('slow', 0.1);
+        });
+        $('.type-3').click(function() {
+                $('.character-type-3').fadeTo('slow', 1);
+                $('.character-type-1').fadeTo('slow', 0.1);
+                $('.character-type-2').fadeTo('slow', 0.1);
+        });
+        $('.type-4').click(function() {
+                $('.character-type-1').fadeTo('slow', 1);
+                $('.character-type-2').fadeTo('slow', 1);
+                $('.character-type-3').fadeTo('slow', 1);
+        });
+});
+ 
+ 
+</script>
+ 
+</head>
+<style type="text/css">
+body {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #FFFFFF;
+        background-attachment: fixed;
+        background-color: #ae0fff;
+        margin-bottom: 50px;
+}
+ 
+ 
+.title {
+        text-align:center;
+        font-family: georgia;
+        font-size: 40px;
+        color: #fff;
+        letter-spacing: 10px;
+        text-shadow: #000 2px 2px 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+    height:10px;
+    background-color: #303030; }
+   
+::-webkit-scrollbar-thumb:horizontal {
+    height:30px;
+    background-color: #303030; }
+   
+::-webkit-scrollbar {
+    height: 10px;
+    width: 4px;
+    background-color: #505050; }
+ 
+.clear {
+        clear: both;
+}
+ 
+#vertical {
+        margin:50px auto;
+        width:920px;
+        margin-bottom: 60px;
+}
+ 
+#vertical div.element {
+        margin-right: 5px;
+        margin-top: 5px;
+        float: left;
+        width: 220px;
+        height: 260px;
+        border: 1px solid #303030;
+        position: relative;
+        overflow: hidden;
+}
+ 
+.wrap {
+        display: block;
+        height: 390px;
+        width: 220px;
+        position: absolute;
+        top: 0;
+}
+ 
+.portrait img {
+        display: block;
+        height: 260px;
+        width: 220px;
+        background-color: #202020;
+}
+ 
+.description {
+        display: block;
+        height: 260px;
+        width: 220px;
+        background-color: #202020;
+        font-family: cambria;
+        font-size: 12px;
+        color: #CCCCCC;
+        padding: 5px;
+        overflow: auto;
+}
+ 
+.description a {
+        display: block;
+        padding: 5px;
+        color: #FFFFFF;
+        background-color: #303030;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+}
+ 
+.navigation {
+        text-align: center;
+        margin-bottom: 20px;
+}
+ 
+.navigation a {
+        padding: 10px 20px;
+        background-color: #303030;
+        border: 1px solid #202020;
+        font-family: cambria;
+        font-size: 12px;
+        color: #CCCCCC;
+        margin-right: 5px;
+        text-decoration: none;
+        cursor: pointer;
+}
+ 
+ 
+ 
+ 
+</style>
+<body>
+<div id="vertical" class="clear">
+    <div class="title">RELATIONSHIPS</div>
+        <div class="navigation">
+                <a href="/">home</a>
+                <a href="/ask">ask</a>
+                <a href="/navigation">navigation</a>
+                <a href="/about-me">about me</a>
+                <a href="http://jakehelps.tumblr.com">&copy;</a>
+        </div>
+   
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i62.tinypic.com/96fc7k.jpg" /></div>
+            <div class="description">
+                        Phillip Joshua Coulson; 'Sir'<br>
+                        <a href="https://broken-weapon.tumblr.com">broken-weapon</a>
+                        Verses: tba<br>
+                        Other Info: tba<br> 
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i62.tinypic.com/fmji28.jpg" /></div>
+            <div class="description">
+                       William 'Billy' Kaplan; Wiccan<br>
+                        <a href="https://callmewiccan.tumblr.com">callmewiccan</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 3 ------>
+<div class="character-type-3">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i62.tinypic.com/rs7t4w.jpg" /></div>
+            <div class="description">
+                        Theodore 'Teddy' Altman; Hulkling<br>
+                        <a href="https://mixed-blood-prince.tumblr.com">mixed-blood-prince</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i60.tinypic.com/kf48k1.jpg" /></div>
+            <div class="description">
+                        Thomas 'Tommy' Shepherd; Speed<br>
+                        <a href="https://nottheteamsociopath.tumblr.com">nottheteamsociopath</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i57.tinypic.com/s32420.jpg" /></div>
+            <div class="description">
+                        Robert 'Bruce' Banner; The Hulk; 'Dad'<br>
+                        <a href="https://badsciencebanner.tumblr.com">badsciencebanner</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 3 ------>
+<div class="character-type-3">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i61.tinypic.com/vhxb9y.jpg" /></div>
+            <div class="description">
+                       Steven Grant Rogers; Captain America<br>
+                        <a href="https://commander-steve.tumblr.com">commander-steve</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i58.tinypic.com/24q61wg.jpg" /></div>
+            <div class="description">
+                       Natasha 'Nat' Romanoff; Black Widow<br>
+                        <a href="https://blackslavicspider.tumblr.com">blackslavicspider</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i60.tinypic.com/2ldyi6p.jpg"></div>
+            <div class="description">
+                       Faina 'Fai' Sannikova; Recluse, 'Baby Spider<br>
+                        <a href="https://redroomdropout.tumblr.com">redroomdropout</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i59.tinypic.com/2q2jthl.jpg" /></div>
+            <div class="description">
+                        Clinton Francis Barton; Hawkeye; 'Hawkass'<br>
+                        <a href="https://ahawkinthevents.tumblr.com">ahawkinthevents</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 3 ------>
+<div class="character-type-3">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i59.tinypic.com/2a9brpd.jpg" /></div>
+            <div class="description">
+                       Agent Jasper Sitwell; 'Agent Smartass'<br>
+                        <a href="https://askagentsitwell.tumblr.com">askagentsitwell</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i62.tinypic.com/9kbhps.jpg" /></div>
+            <div class="description">
+                       Phillip Jude Coulson, 'Dork'<br>
+                        <a href="https://coulsonphilcoulson.tumblr.com">coulsonphilcoulson</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i60.tinypic.com/ve6ufb.jpg"></div>
+            <div class="description">
+                       Natalia 'Natasha' Romanoff; Black Widow<br>
+                        <a href="https://kickasscurls.tumblr.com">kickasscurls</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i60.tinypic.com/2r7awl1.jpg" /></div>
+            <div class="description">
+                        Mary-Sue 'Skye' Poots; Hack-gal<br>
+                        <a href="https://solvingthxpuzzle.tumblr.com">solvingthxpuzzle</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 3 ------>
+<div class="character-type-3">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i62.tinypic.com/30t1nb4.jpg" /></div>
+            <div class="description">
+                       Decker Coulson<br>
+                        <a href="https://vintagedeck.tumblr.com">vintagedeck</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i60.tinypic.com/16gk3gx.jpg" /></div>
+            <div class="description">
+                       Phillip J Coulson, 'Director'<br>
+                        <a href="https://shieldirector.tumblr.com">shieldirector</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i60.tinypic.com/2w6w87l.jpg"></div>
+            <div class="description">
+                       Clinton Francis Barton, Hawkeye, 'Bird Brain'<br>
+                        <a href="https://thegreatestmarksman.tumblr.com">thegreatestmarksman</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i62.tinypic.com/6qf821.jpg" /></div>
+            <div class="description">
+                        Agent Jemma Simmons; FitzSimmons; 'Jem'<br>
+                        <a href="https://neverskydivingagain.tumblr.com">neverskydivingagain</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 3 ------>
+<div class="character-type-3">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i61.tinypic.com/de0aj8.jpg" /></div>
+            <div class="description">
+                       Agent Leopold Fitz; FitzSimmons; 'Lion Boy'<br>
+                        <a href="https://askagentsitwell.tumblr.com">askagentsitwell</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i61.tinypic.com/14vr9ew.jpg" /></div>
+            <div class="description">
+                       America 'Am' Chavez; Miss America; 'Chica'<br>
+                        <a href="https://interdimensional-kickerofbutt.tumblr.com">interdimensional-kickerofbutt</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 1 ------>
+<div class="character-type-1">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i59.tinypic.com/v7v05z.jpg" /></div>
+            <div class="description">
+                        Aaron Ooros; Hellstorm<br>
+                        <a href="https://thesonofhellstrom.tumblr.com/">thesonofhellstrom</a>
+                        Verses: tba<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i62.tinypic.com/2lvbg3r.jpg"></div>
+            <div class="description">
+                       Isabeau 'Bo' Dennis; Succubutt; BFFL<br>
+                        <a href="https://undecided-wanderer.tumblr.com">undecided-wanderer</a>
+                        Verses: Kenzi!Verse<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i57.tinypic.com/16bhu06.jpg"></div>
+            <div class="description">
+                       Dyson Thornwood; Wolf-man; 'D-Man'<br>
+                        <a href="https://his-andor-hers.tumblr.com">his-andor-hers</a>
+                        Verses: Kenzi!verse<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+<!------ TYPE 2 ------>
+<div class="character-type-2">
+    <div class="element">
+        <div class="wrap">
+            <div class="portrait"><img src="http://i57.tinypic.com/2na20zd.jpg"></div>
+            <div class="description">
+                       Vex 'Pain In The Ass'; Mesmer-Boy<br>
+                        <a href="https://incrediblyvexing.tumblr.com">incrediblyvexing</a>
+                        Verses: Kenzi!verse<br>
+                        Other Info: tba<br>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
