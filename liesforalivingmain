@@ -1,0 +1,1530 @@
+  
+<!DOCTYPE html>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/pq6sadp/72Dnoxbpp/jquery.style-my-tooltips.js"></script>
+<script>(function($){$(document).ready(function(){$("[title]").style_my_tooltips({tip_follows_cursor:true,tip_delay_time:100,tip_fade_speed:400
+}
+);
+});
+})(jQuery);
+</script>
+ 
+ 
+ 
+<head><title>{Title}</title>
+<link rel=“stylesheet” href=“https://cdn.linearicons.com/free/1.0.0/icon-font.min.css”>
+
+ <link rel="stylesheet" href="templates/clean/template.css" type="text/css"/>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+ 
+    <meta name="image:Background" content=""/>
+    <meta name="image:Sidebar" content=""/>
+    <meta name="image:InstaPic1" content=""/>
+    <meta name="image:InstaPic2" content=""/>
+    <meta name="image:InstaPic3" content=""/>
+    
+    <meta name="color:Background" content="#ffffff"/>
+    <meta name="color:PostBG" content="#ffffff"/>
+    <meta name="color:Text" content="#000000"/>
+    <meta name="color:Post Links" content="#000000"/>
+    <meta name="color:Hover" content="#000000"/>
+    <meta name="color:Links" content="#000000"/>
+    <meta name="color:Linksbg" content="#000000"/>
+    <meta name="color:Border" content="#000000"/>
+    <meta name="color:Accent" content="#ffffff"/>
+    <meta name="color:Blockquote" content="#000000"/>
+    <meta name="color:descbg" content="#000000"/>
+    <meta name="color:desctext" content="#eeeeee"/>
+    <meta name="color:container" content="#ffffff"/>
+    
+    <meta name="text:Home URL" content="/"/>
+    <meta name="text:Link1" content="Home"/>
+    <meta name="text:Ask URL" content="/"/>
+    <meta name="text:Link2" content="Ask"/>
+    <meta name="text:Title1" content="lorem ipsum"/>
+    <meta name="text:Mini Title" content="lorem ipsum"/>
+    <meta name="text:Name" content="lorem ipsum"/>
+    <meta name="text:Posts" content="100"/>
+    <meta name="text:Followers" content="10m"/>
+    <meta name="text:Following" content="100"/>
+    <meta name="text:InstaDesc" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+    <meta name="text:Your URL" content="ex: etcrnities"/>
+    <meta name="text:PopupMainTitle" content="Lorem ipsum"/>
+    <meta name="text:PopupTitle1" content="Lorem ipsum"/>
+    <meta name="text:Popup Link 1 URL" content="/"/>
+    <meta name="text:Popup Link 1 Title" content="refresh"/>
+    <meta name="text:Popup Link 2 URL" content="/"/>
+    <meta name="text:Popup Link 2 Title" content="inquiries"/>
+    <meta name="text:Popup Link 3 URL" content="/"/>
+    <meta name="text:Popup Link 3 Title" content="navigation"/>
+    <meta name="text:Popup Link 4 URL" content="/"/>
+    <meta name="text:Popup Link 4 Title" content="locations"/>
+    <meta name="text:Popup Link 5 URL" content="/"/>
+    <meta name="text:Popup Link 5 Title" content="characters"/>
+    <meta name="text:Popup Link 6 URL" content="/"/>
+    <meta name="text:Popup Link 6 Title" content="application"/>
+    
+    
+   
+ 
+     
+<link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico:400,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=raleway:900i&display=swap" rel="stylesheet">
+
+<style type="text/css">
+@font-face { font-family: "lauren"; src: url('https://dl.dropboxusercontent.com/s/bkxamo3ao6yrkcb/Lauren-Regular.ttf'); ;}
+/** thank you @redjamies i hate importing fonts such a pain **/
+
+#s-m-t-tooltip {
+ 
+max-width:100px;
+margin-left:10px;
+margin-top:10px;
+padding:3px;
+padding-bottom:2px;
+background: {color:postbg};
+border:1px solid {color:text};
+font-family: 'raleway';
+font-size:11px;
+letter-spacing:0px;
+border-radius:3px;
+text-transform:uppercase; 
+color:{color:text};
+text-shadow: 1px 1px 0px rgba(255,255,255,.3);
+z-index:999999999999999999999999999999999999; }
+
+  a:hover{
+      cursor:pointer;
+  } 
+ 
+blockquote {
+    font-size:9px;
+    font-family: 'raleway';
+    margin-left:5px;
+    margin-right:7px;
+    border-left:4px solid{color:blockquote};
+    text-align:left;
+    padding:2px;
+    padding-left:7px;
+    font-weight:normal;
+    text-align:justify;
+    color:{color:text};
+    background-color:{color:postbg};
+}
+ 
+blockquote a{
+        color:{color:hover};
+    }
+   
+blockquote blockquote, blockquote blockquote blockquote blockquote, blockquote blockquote blockquote blockquote blockquote blockquote,   blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote, blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote, blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote{
+    background-color:{color:postbg};
+    color:{color:text};
+}
+
+.entries blockquote img {
+    max-width:100%;
+    height:auto;
+     margin-left: 20px;
+}
+
+#max > blockquote {
+    margin: 0; padding: 0;
+}
+
+blockquote blockquote img{
+    max-width:100%;
+    right:0px;
+}
+
+blockquote blockquote blockquote img{
+    max-width:100%;
+}
+ 
+ blockquote blockquote blockquote, blockquote blockquote blockquote blockquote blockquote, blockquote blockquote blockquote blockquote blockquote blockquote blockquote, blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote, blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote{
+    font-size:12px;
+    font-family: 'raleway';
+    margin-left:5px;
+    margin-right:5px;
+    letter-spacing:0px;
+    border-left:4px solid{color:blockquote};
+    text-align:left;
+    padding:5px;
+    padding-left:5px;
+    font-weight:normal;
+    color:{color:text};
+    background-color:{color:postbg};
+}
+ 
+ small, sub, sup{
+     font-size:9px;
+ }
+ 
+code {
+    font-size:11px;  
+    font-family: 'raleway';
+    text-transform:none;
+   
+}
+
+b, bold, strong{
+    color:{color:post links};
+    font-weight:bold;
+}
+
+i{
+    color:{color:hover};
+}
+ 
+hr{
+    border:none;
+    border-top:dashed 1px {color:text};
+}
+ 
+pre {
+    font-family: 'raleway';
+    text-align:center;
+    font-size:11px;
+    max-width:320px;
+    padding:10px ;
+    color:{color:text};
+    background:{color:postbg};
+}
+h1{
+    font-family: 'raleway';
+    font-size:25px;
+    text-align:center;
+    text-transform:uppercase;
+    padding-bottom:3px;
+    color:{color:blockquote};
+}
+
+h1 sub, h1 bold, h1 italic, h2 small, h2 sub, h2 sup{
+    font-size:20px;
+    color:{color:blockquote};
+}
+    
+h2{
+    text-shadow: 1px 1px 0px {color:hover};
+    margin-top:-5px;
+    color:{color:text};
+    margin-bottom:5px;
+    text-transform:uppercase;
+    
+    font-family:'raleway';
+    font-size:20px;
+    text-align:center;
+}
+
+h3{
+    color:{color:text};
+    letter-spacing:2px;
+    font-size:30px;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-align:right;
+}
+   
+h4{
+    color:{color:text};
+    letter-spacing:2px;
+    font-size:11px;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-align:left;
+}   
+/*GENERAL*/
+ 
+
+a {
+    color:{color:Background};
+    color:{color:post links};
+    text-decoration:none;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+   
+a:hover {
+    color:{color:Hover};
+    text-decoration:underline;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+
+   
+/*GENERAL*/
+ 
+body {
+    font-family:'raleway';
+    font-size:12px;
+    background-color:{color:background};
+    background-image:url('{image:background}') ;
+     }
+   
+a {
+    color:{color:post links};
+    text-decoration:none;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+   
+a:hover {
+    color:{color:Hover};
+    text-decoration:underline;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+ 
+ 
+ 
+/*END GENERAL*/
+
+/*Acco*/
+
+ 
+/*SIDEBAR*/
+.links {
+    position:fixed;
+    display:inline-block;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-280px;
+    width:180px;
+    height:0px;
+    padding-bottom:2px;
+    overflow:visible;
+    line-height:0px;
+    text-align:center;
+    
+    z-index:99999999999;
+        -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out
+}
+
+   
+.links a {
+    display:inline-block;
+    border-radius:90px;
+    width:20px;
+    height:10px;
+    padding:5px;
+    margin-right:5px;
+    margin-bottom:10px;
+    line-height:0px;
+    font-family:'raleway';
+    font-size:15px;
+    text-decoration:none;
+    font-weight:bold;
+    padding-top:15px;
+    text-transform:uppercase;
+    color:{color:links};
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;}
+
+ 
+
+.links a:hover{
+    color:{color:hover};
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+}
+
+.stats{
+    position:fixed;
+    width:250px;
+    height:200px;
+    font-family:'raleway';
+    margin-top:260px;
+    z-index:8;
+    font-size:11px;
+    margin-left:150px;
+    color:{color:text};
+    text-align:justify;
+}
+
+.stats span{
+    color:{color:text};
+    padding-right:20px;
+    text-align:justify;
+}
+
+.stats b{
+    font-weight:bold;
+}
+
+.stats p{
+    color:{color:text};
+}
+
+.stats h1{
+    font-family:'raleway';
+    line-height:20px;
+    text-transform:lowercase;
+    font-weight:normal;
+    text-align:left;
+    margin-top:0px;
+    font-size:16px;
+    
+}
+
+.follow a{
+    position:fixed;
+    border-radius:3px;
+    text-align:center;
+    font-size:11px;
+    width:50px;
+    margin-left:330px;
+    margin-top:255px;
+    padding:7px;
+    padding-left:9px;
+    text-transform:uppercase;
+    z-index:999999999999;
+    font-weight:bold;
+    height:14px;
+    background:{color:accent};
+    color:{color:border};
+}
+
+.follow:hover{
+    cursor:pointer;
+}
+    
+.instapics{
+    position:fixed;
+    width:370px;
+    height:300px;
+    margin-left:40px;
+    margin-top:430px;
+    z-index:9;
+}  
+
+.instapics img{
+    display:inline-block;
+    width:100px;
+    height:100px;
+    padding:10px;
+}
+    
+.title{
+    position:fixed;
+    width:400px;
+    height:17px;
+    margin-left:10px;
+    margin-top:120px;
+    text-align:center;
+    z-index:99999999;
+}
+
+.title span{
+    position:fixed;
+    letter-spacing:1px;
+    font-size:60px;
+    margin-top:-85px;
+    margin-left:-110px;
+    color:{color:links};
+    font-family:pacifico;
+    font-style:italic;
+  text-shadow: 2px 2px 1px {color:accent};
+  -moz-transform: rotate(346deg);
+-webkit-transform: rotate(346deg);
+-o-transform: rotate(346deg);
+-ms-transform: rotate(346deg);
+transform: rotate(346deg);
+}
+
+.title p{
+ position:fixed;
+   background-color:{color:border};
+   color:{color:linksbg};
+   padding-top:2px;
+   padding-left:5px;
+   padding-right:5px;
+   padding-bottom:3px;
+   height:auto;
+   margin-top:0px;
+   margin-left:200px;
+   font-weight:bold;
+   min-width:10px;
+   font-size:11px;
+   text-align:right;
+   text-transform:uppercase;
+   font-family:raleway;
+   font-style:italic;
+       -webkit-transition-duration: 0.5s;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    text-shadow: 1px 1px 0px {color:post links};
+    
+    -webkit-transform: rotate(356deg);
+  -moz-transform: rotate(356deg);
+  -ms-transform: rotate(356deg);
+  -o-transform: rotate(356deg);
+  transform: rotate(356deg);
+}
+
+.header{
+    height:60px;
+    width:60px;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin-top:-361px;
+    margin-left:-350px;
+    z-index:9999;
+}
+
+.pic{
+    position:fixed;
+    width:80px;
+    height:80px;
+    margin-left:40px;
+    margin-top:250px;
+    background-image:url('{image:sidebar}');
+    z-index:9999999;
+    border-radius:90px;
+}
+
+.pict{
+    position:fixed;
+    margin-top:60px;
+    margin-left:730px;
+   width:60px;
+   height:520px;
+   z-index:99;background:{color:border};
+   background-image:url('{image:right}');
+   
+}
+
+
+
+
+.pagination {
+    position:fixed;
+    padding:7px;
+    top:50%;
+    left:50%;
+    margin-left:-400px;
+    margin-top:280px;
+    width:110px;
+    height:13px;
+    font-size:10px;
+    font-weight:bold;
+    z-index:999;
+    padding-top:9px;
+    text-align:center;
+    background:{color:links};
+    letter-spacing:3px;
+}
+
+.pagination a{
+    color:{color:linksbg};
+}
+
+.pagination a:hover{
+    text-decoration:none;
+    color:{color:hover};            
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+ 
+ 
+/*END SIDEBAR*/
+ 
+/*POSTS*/
+#c{
+    height:500px;
+    width:420px;
+    margin-top:40px;
+    z-index:8;
+    position:fixed;
+    margin-left:450px;
+    overflow:auto;
+    color:{color:text};
+}
+
+.container{
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin-top:-300px;
+    margin-left:-400px;
+    height:580px;
+    width:890px;
+    z-index:-9;
+    background:{color:container};
+}
+
+.posts {
+    width:360px;
+    margin-left:0px;
+    font-size:11px;
+    font-family: 'raleway';
+    color:{color:text};
+    font-weight:normal;
+}
+
+.posts p{
+    
+}
+   
+.posts a{
+    color:{color:post links};
+}   
+   
+.entries {
+    width:360px;
+    padding:20px;
+    font-weight:normal;
+    color:{color:text};
+    background-color:{color:postbg};
+    font-family: 'raleway';
+    margin-bottom:20px;
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+   
+.info {
+    padding:5px;
+    padding-top:20px;
+    
+    margin-left:-20px;
+    margin-top:-21px;
+    text-align:right;
+    font-family: 'raleway';
+    font-weight:bold;
+    font-size:11px;
+    width:390px;
+     border-bottom:none;
+    line-height:15px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:{color:post links};
+    background-color:{color:postbg};
+    margin-bottom:10px;
+    text-shadow: 1px 1px 0px rgba(255,255,255,.2);
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+.info i{
+    margin-top:4px;
+    color:{color:postbg};
+    position:absolute;
+}
+
+.info i:hover{
+    cursor:pointer;
+}
+   
+.info a {
+    text-align:right;
+    font-weight:bold;
+    color:{color:post links};
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+   
+.info a:hover {
+    color:{color:hover};
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+   
+.noties{
+    margin-top:-10px;
+    text-align:right;
+}  
+ 
+ .tags{
+      padding:20px;
+    margin-left:-20px;
+    margin-bottom:-31px;
+    text-align:right;
+    font-family: 'raleway';
+    font-weight:bold;
+    font-size:11px;
+    width:360px;
+    text-align:center;
+    line-height:15px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:{color:post links};
+    background-color:{color:postbg};
+    text-shadow: 1px 1px 0px rgba(255,255,255,.2);
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+ }
+   
+.tags a {
+    display:inline-block;
+    margin-right:5px;
+    margin-top:0px;
+    color:{color:post links};
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+   
+.tags a:hover{
+    color:{color:hover};
+}
+   
+.post_title {
+    display:block;
+    padding:2px;
+    text-align:center;
+    font-size:25px;
+    font-family: 'raleway';
+    color:{color:links};
+}
+
+.post_title a{
+    color:{color:links};
+}
+   
+.text {
+    display:block;
+    padding:5px;
+    text-align:justify;
+    color:{color:Text};
+}
+
+.photo{
+    padding-top:10px;
+    margin-left:2px;}
+   
+.photo img {
+    display:block;
+    max-width:350px;
+    margin-left:-2px;
+}
+
+.photoset{
+    width:100%;
+    margin-left:1px;
+    padding-top:6px;
+}
+
+.posts img{
+     max-width:360px;
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+}
+
+.posts img:hover{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+   
+.video {
+   width:345px;
+    margin-left:-52px;
+}
+ 
+.video iframe {
+   width:345px;}
+
+  .posts p{
+      color:{color:text};
+  }
+   
+.quote {
+    display:block;
+    padding:10px;
+    text-align:center;
+    font-size:15px;
+    font-family:'raleway';
+    color:{color:text};}
+   
+.source {
+    display:block;
+    padding:5px;
+    text-align:center;
+    font-size:10px;
+}
+   
+.chat li {
+    display:block;
+    padding:5px;
+    color:{color:text};}
+    
+.audio{
+    width:100%-30px;
+    border-radius:4px;
+    margin-top:20px;
+    height:55px;
+    background:#f2f2f2;padding:20px;
+}
+   
+.audioimg img {
+    width:40px;
+    height:40px;
+    margin-left:270px;
+    border-radius:30px;
+    padding:4px;
+    border:1px solid {color:border};
+    color:{color:text};
+    font-family: 'raleway';
+    text-align:center;
+    text-transform:uppercase;}
+   
+.audioinfo {
+    margin-top:-20px;
+    margin-left:50px;
+    max-width:200px;
+    overflow:scroll;
+    color:{color:Text};}
+    
+.audioplayer{
+    height:30px;
+    width:30px;
+    margin-top:-40px;
+    margin-left:5px;
+    font-size:15px;
+    overflow:hidden;
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+}
+
+.audioimg:hover .audioplayer{
+    opacity:1
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+}
+   
+#ask{
+    font-family:'raleway';
+    font-size:8px;
+    width:340px;
+    margin-left:5px;
+    padding:10px;
+    text-align:justify;
+    padding-bottom:-0px;
+    text-transform:uppercase;
+    font-weight:normal;
+    color:{color:text};
+    letter-spacing:1px;
+    text-shadow: 1px 1px 0px rgba(255,255,255,.2);
+}
+ 
+.question{
+   
+    min-height:10px;
+    width:280px;
+    text-align:justify;
+    color:{color:text};
+    padding:5px;
+    font-weight:bold;
+    line-height:18px;
+    font-family:'raleway';
+    margin-left:50px;
+     margin-top:-20px;
+}
+ 
+ .question b, .question a{
+    background-color:{color:text};
+    color:{color:postbg};
+    padding:5px;
+    font-size:11px;
+    margin-left:-10px;
+}
+
+ .question img{
+    -webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+padding:3px;
+margin-left:-55px;
+margin-top:12px;
+border:1px solid {color:border};
+box-shadow: 0px 0px 2px rgba(255,255,255,.5) ;
+   -webkit-box-shadow:0px 0px 2px rgba(255,255,255,.5) ;
+    -moz-box-shadow:0px 0px 2px rgba(255,255,255,.5) ;
+ }
+ .answer{
+     margin-top:20px;
+     text-transform:none;
+     color:{color:text};
+     text-align:justify;
+ }
+/*END POSTS*/
+ 
+/*scrollbar*/
+ 
+::-webkit-scrollbar {
+    height:0px;
+    width:0px;
+    background-color:{color:border};}
+   
+::-webkit-scrollbar-thumb {
+    height:auto;
+    background-color:{color:accent};}
+ 
+ 
+.notes {
+    font-family:'raleway';
+    text-align:center;
+    text-transform:uppercase;
+    font-size:10px;
+    width:350px;
+    margin-left:-30px;
+    margin-top:20px;
+    color:{color:border};
+    }
+     
+.notes li{
+    list-style-type:none;
+    padding:5px;
+    }
+     
+.notes img {
+    opacity:0;
+    display:none;
+    }
+   
+.notes a{
+    color:{color:post links};
+}
+ 
+ #credit {
+    position:fixed;
+    font-family:'raleway';
+    color:{color:Border};
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:11px;
+    width:10px;
+    height:10px;
+    right:5px;
+    bottom:5px;
+    padding:5px;
+    opacity:1;
+    letter-spacing:4px;
+}
+
+
+
+/*POP UP*/
+.modal{
+    position:fixed;
+    left:50%;
+    top:50%;
+    width:10px;
+    z-index:8;
+}
+ 
+.modalbutton{
+    margin-left:-168px;
+    margin-top:-113px;
+    text-shadow:none;
+    
+    text-decoration:none;
+    text-transform:uppercase;
+}
+ 
+.modalbutton a{
+    
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+   
+}
+
+.modalbutton span{
+    position:fixed;
+    font-family:'raleway';
+    width:10px;
+    height:0px;
+    padding:20px;
+    font-size:15px;
+    padding-top:20px;
+    padding-bottom:40px;
+    padding-right:30px;
+    color:{color:links};
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;
+}
+ 
+.modalbutton p{
+    color:{color:linksbg};
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;}
+    
+
+.modalbutton a:hover {
+    color:{color:Hover};
+    background-color:{color:SBLinksbg};
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+ 
+ 
+.modalDialog {
+    position: fixed;
+    font-family: 'raleway';
+    top:50%;
+    margin-top:-300px ;
+    left: 50%;
+    height:530px;
+    width:400px;
+    margin-left:30px;
+    padding:20px;
+    border-top:10px solid {color:container};
+    background-color: {color:container};
+    z-index: 8;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+   pointer-events:none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 420px;
+    height:430px;
+     z-index: 8;
+    position: relative;
+    padding: 5px 10px 13px 10px;
+    background: {color:container};
+}
+ 
+.pu{
+    position:fixed;
+    margin-left:40px;
+    margin-top:80px;
+    width:330px;
+    height: 250px;
+    overflow:scroll;
+    text-align:justify;
+    border:20px solid {color:container};
+    height:170px;
+}
+ 
+ .poplinks{
+    position:fixed;
+    display:inline-block;
+    top:50%;
+    left:50%;
+    margin-top:160px;
+    margin-left:-30px;
+    width:480px;
+    height:0px;
+    padding-bottom:2px;
+    overflow:visible;
+    line-height:0px;
+    text-align:center;
+    
+    z-index:99999999999;
+        -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out
+}
+
+   
+.poplinks a {
+    display:inline-block;
+    border-radius:90px;
+   text-transform:uppercase;
+    padding:5px;
+    margin-right:5px;
+    margin-bottom:10px;
+    line-height:0px;
+    font-family:'raleway';
+   
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out;}
+
+ .poplinks span{
+     color:{color:linksbg};
+     background:{color:links};
+     border-radius:100px;
+     width:12px;
+     height:12px;
+     padding:10px; 
+     font-size:12px;
+     
+    
+ }
+ 
+ .poplinks p{
+    color:{color:links};
+    margin-top:-32px;
+    margin-bottom:-10px;
+    margin-left:70px;
+    margin-right:-50px;
+    background:{color:linksbg}; 
+    width:90px;
+    height:16px;
+    border-left:20px solid {color:linksbg};
+    font-size:11px;
+    text-decoration:none;
+    font-weight:bold;
+    padding-top:16px;
+    font-weight:normal;
+    text-align:left;
+    letter-spacing:1px;
+    0px 0px 2px rgba(255,255,255,0.59)
+    -webkit-border-top-right-radius: 50px;
+-webkit-border-bottom-right-radius: 50px;
+-moz-border-radius-topright: 50px;
+-moz-border-radius-bottomright: 50px;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+ }
+
+.poplinks a:hover{
+    color:{color:hover};
+    -webkit-transition:all 0.7s ease-in-out;
+    -moz-transition:all 0.7s ease-in-out;
+    -o-transition:all 0.7s ease-in-out;
+    transition:all 0.7s ease-in-out; 
+    text-decoration:none;
+    
+    color:{color:hover};
+}
+ 
+ .putl p{
+     
+  text-align:right;
+  padding:2px;
+  text-align: center;
+  font-weight: bold;
+  color:{color:accent};
+  font-size:12px;
+  text-transform:uppercase;
+  font-family:raleway;
+  text-shadow:none;
+  z-index:8;
+}
+ 
+.putl{
+    position: fixed;
+    margin-top:120px;
+    margin-left:-90px;
+    width:350px;
+    height:70px;
+    text-align:center;
+    z-index:8;
+    -moz-transform: rotate(270deg);
+-webkit-transform: rotate(270deg);
+-o-transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+transform: rotate(270deg);
+}
+ 
+.puim{
+    position:fixed;
+    width:250px;
+    height:60px;
+    margin-left:-80px;
+    margin-top:120px;
+    text-align:center;
+    letter-spacing:1px;
+    font-family:'pacifico';
+    color:{color:border};
+    font-size:50px;
+    -moz-transform: rotate(270deg);
+-webkit-transform: rotate(270deg);
+-o-transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+transform: rotate(270deg);
+}
+ 
+.puim p{
+    margin-top:-10px;
+    
+}
+ 
+
+.ques{
+    position:fixed;
+    margin-top:10px;
+    margin-left:140px;
+    width:250px;
+    height:330px;
+    background:{color:container};
+    overflow:auto;
+}
+.cvv h6{
+    margin-left:00px;
+    margin-top:370px;
+    position:fixed;
+    font-size:25px;
+    color:{color:text};
+    font-family:'raleway';
+    text-shadow: 2px 2px 0px {color:post links};
+    text-align:center;
+    text-transform:uppercase;
+    font-style:italic;
+}
+ 
+.cvv h5{
+    margin-left:00px;
+    margin-top:370px;
+    position:fixed;
+    font-size:10px;
+    color:{color:post links};
+    font-family:'raleway';
+    text-align:center;
+    text-transform:uppercase;
+    font-style:italic;
+} 
+.cvv body {
+    font-family: 'raleway';
+    font-size: 20px;
+    font-weight: normal;
+  width: 450px;
+    margin: 50px auto;
+    margin-top:0px;
+    margin-bottom:10px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.cvv p {
+  word-wrap: break-word;
+  margin-bottom: 12px;
+  line-height: 10px;
+  position:relative;
+    padding:10px 20px;
+  border-radius:25px;
+  margin-top:0px;
+    margin-bottom:10px;
+  color:{color:postbg};
+ 
+  &:before, &:after {
+    content:"";
+        position:absolute;
+    bottom:-2px;
+    height:20px;
+  }
+}
+ 
+.from-me {
+    margin-left:100px;
+    background:{color:post links};
+    text-align:right;
+       
+    &:before {
+        right:-7px;
+        border-right:20px solid {color:post links};
+        border-bottom-left-radius: 16px 14px;
+        transform:translate(0, -2px);
+    }
+ 
+    &:after {
+        right:-56px;
+        width:26px;
+        background:white;
+        border-bottom-left-radius: 10px;
+        transform:translate(-30px, -2px);
+    }
+}
+.from-them {
+    background:{color:hover};
+    width:100px;
+       
+    &:before {
+        left:-7px;
+        border-left:20px solid {color:hover};
+        border-bottom-right-radius: 16px 14px;
+        transform:translate(0, -2px);
+    }
+ 
+    &:after {
+        left:4px;
+        width:26px;
+        background:white;
+        border-bottom-right-radius: 10px;
+        transform:translate(-30px, -2px);
+    }
+}
+ 
+ 
+.close {
+    color: {color:text};
+    line-height: 25px;
+    position: absolute;
+    right:20px;
+    margin-top:-28px;
+    text-align: center;
+    font-weight: bold;
+    font-size:11px;
+}
+ 
+.close:hover {
+    color: {color:border};
+}
+ 
+
+/*END SCROLLBAR*/
+ 
+</style>
+</head>
+<body>
+ 
+<!--SIDEBAR-->
+</div> 
+
+ 
+
+
+<div class="modal">
+<div class="modalbutton">
+<a href="#openModal" title="navigate"><p><span class="th th-meteorite-o" title="navigate"></span></p></a></div>
+ 
+<div class="modalbox">
+ 
+<div id="openModal" class="modalDialog">
+    <div>       <a href="#close" title="Close" class="close">x</a>
+ 
+<div class="putl"><p>{text:popuptitle1}</p></div>    
+ 
+<div class="pu">{text:popup}</div>
+ 
+<div class="puim"><p>{text:PopupMainTitle}</p></div>
+ 
+   
+       <div class="cvv">
+        <h6>NAVIGATION</h6>
+            <h5>find your way around</h5>
+            <div class="ques">
+<p class="from-them">barbara 'bobbi' amelia morse</p>
+<p class="from-me">february 11th, 1979</p>
+<p class="from-them">mockingbird, agent 19, bobbi, the huntress, beth ryans, amelia jones, kitty jameson.</p>
+<p class="from-me">phd in biochemistry, from georgia institute of technology</p>
+<p class="from-them">technically agent level 6, though shield has fallen apart</p>
+<p class="from-me">absolutely suffers from ptsd, and anxiety</p>
+<p class="from-them">she's one of the few agents fury recruited himself</p>
+<p class="from-me">skilled in both hand to hand combat and many weapons</p>
+<p class="from-them">you want her to do something for you? bribe her with english chips or like the best french fries you can find.</p>
+<p class="from-me">actually prefers tea to coffee, but will drink coffee if its all there is</p>
+<p class="from-them">she's farsighted, and needs glasses or contacts to read computers, tablets, or papers</p>
+<p class="from-me">fluent/semi fluent in english, mandarin, cantonese, french, spanish, german, russian, arabic, afrikaans, japanese, italian, thai, and tagalog</p></div>
+ 
+        </div>
+        
+<div class="poplinks">
+<a href="{text:popup link 1 URL}"><span class="th th-home-o"></span><br><p>{text:popup link 1 Title}</p></a>
+<a href="{text:popup link 2 URL}"><span class="th th-chat-bubble-o"></span><br><p>{text:popup link 2 Title}</p></a>
+<a href="{text:popup link 3 URL}"><span class="th th-planet-1-o"></span><br><p>{text:popup link 3 Title}</p></a>
+<a href="{text:popup link 4 URL}"><span class="th th-moon-o"></span><br><p>{text:popup link 4 Title}</p></a>
+<a href="{text:popup link 5 URL}"><span class="th th-planet-2-o"></span><br><p>{text:popup link 5 Title}</p></a>
+<a href="{text:popup link 6 URL}"><span class="th th-constellation-o"></span><br><p>{text:popup link 6 Title}</p></a>
+
+   
+    </div>
+</div></div>
+<div class="container">
+<div class="header"></div><div class="pic"></div>
+<div class="links"><a href="{text:Home URL}" title="home"><span class="th th-earth-o"></span><br></a><a href="{text:Ask URL}" title="inquiries"><span class="th th-satellite-o"></span><br></a></div>
+
+<div class="follow"><a href="tumblr.com/follow/{text:your url}">follow</a></div>
+
+<div class="stats">
+<!--stats here-->
+<h1>{text:name}</h1>
+<span><b>{text:posts}</b> posts</span> 
+<span><b>{text:followers}</b> followers</span> 
+<span><b>{text:following}</b> following</span>
+<p style="height:100px; overflow:scroll;">{text:instadesc}</P>
+    
+</div>
+
+<div class="instapics">
+    <img src="{image:instapic1}"/>
+    <img src="{image:instapic2}"/>
+    <img src="{image:instapic3}"/>
+    
+</div>
+
+<div class="title"><span>{text:title1}</span><p>{text:mini title}</p></div>
+
+
+               <div id="c">
+<div class="posts">
+   {block:Posts}
+
+<div class="entries">
+ <div class="info"><center>
+<a href="{Permalink}">{NoteCount} notes</a>&nbsp;•&nbsp;<a href="{Permalink}">{TimeAgo}</a>&nbsp;•&nbsp;<a href="{ReblogURL}" target="_blank" class="details">reblog</a></a>
+        </center></div>
+{block:Text}
+   
+    {block:Title}<div class="post_title">{Title}</div>{/block:Title}
+    <div class="text">{Body}</div>
+   
+{/block:Text}
+ 
+<!--END TEXT POSTS-->
+ 
+<!--PHOTO POSTS-->
+ 
+{block:Photo}
+   
+    <div class="photo"><center><img src="{PhotoURL-HighRES}"/></center></div>
+    <div class="text">{Caption}</div>
+ 
+{/block:Photo}
+ 
+<!--END PHOTO POSTS-->
+ 
+<!--PHOTOSET POSTS-->
+ 
+{block:Photoset}
+ 
+ <center><div class="photoset">{Photoset}</div></center>
+    <div class="text">{Caption}</div>
+ 
+{/block:Photoset}
+ 
+<!--END PHOTOSET POSTS-->
+ 
+<!--QUOTE POSTS-->
+ 
+{block:Quote}
+   
+    <div class="quote">❝{Quote}❞ </div>
+    <div class="source" style="text-align: left; font-weight:bold;">&mdash;{Source}</div>
+ 
+{/block:Quote}
+ 
+<!--END QUOTE POSTS-->
+ 
+<!--LINK POSTS-->
+ 
+{block:Link}
+   
+    <div class="post_title"><a href="{URL}">{Name}</a></div>
+    {block:Description}<div class="text">{Description}</div>{/block:Description}
+   
+{/block:Link}
+ 
+<!--END LINK POSTS-->
+ 
+<!--CHAT POSTS-->
+ 
+{block:Chat}
+   
+    {block:Title}<div class="post_title">{Title}</div>{/block:Title}
+    <div class="chat">
+        <ul>
+            {block:Lines}<li class="{Alt}">{block:Label}<b>{Label}</b> {/block:Label}{Line}</li>{/block:Lines}
+        </ul>
+    </div>
+ 
+{/block:Chat}
+
+<!--END CHAT POSTS-->
+ 
+<!--AUDIO POSTS-->
+ 
+{block:Audio}
+
+   <div class="audio"> {block:AlbumArt}<div class="audioimg"><img src="{AlbumArtURL}"/><div class="audioplayer">{AudioPlayerWhite}</div></div>{/block:AlbumArt}
+    <div class="audioinfo">
+    {block:TrackName}<b>Now Playing</b> {TrackName}{/block:TrackName}{block:Artist} <b>by</b> {Artist}{/block:Artist}<br></div>
+</div>
+    {block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+   
+{/block:Audio}
+ 
+<!--END AUDIO POSTS-->
+ 
+<!--VIDEO POSTS-->
+ 
+{block:Video}
+   
+    <center><div class="video">{Video-400}</div></center>
+    <div class="text">{Caption}</div>
+   
+{/block:Video}
+ 
+<!--END VIDEO POSTS-->
+ 
+<!--ANSWER POSTS-->
+{block:Answer}
+<div id="ask">
+<div class="question">
+<img src="{AskerPortraitURL-40}"/><p style="margin-top:-25px;"><b>{Asker}:</b> {Question}</p></div>
+<div class="answer">
+{Answer}</div></div>
+{/block:answer}
+<!--END ANSWER POSTS-->
+ {block:HasTags}
+                 <div class="tags"> {block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}</div>
+            {/block:HasTags}  {block:PostNotes}<div id="notes">{PostNotes}{/block:PostNotes}</div>
+
+{/block:Posts}
+  </div>
+{/block:PermalinkPage}</div>
+ 
+</div>
+ </div>
+ </div> 
+</div>
+<div id="credit">
+<a href="http://etcrnities.tumblr.com" title="etcrnities"><span class="th th-bee-o"></span></a>
+</div>
+</div>
+ </div>
+<!--END POSTS-->
+
+ </div><div class="pagination">
+{block:PreviousPage}<a href="{PreviousPage}">BACK / </a>{/block:PreviousPage}
+        {block:NextPage}<a href="{NextPage}">NEXT</a>{/block:NextPage}{/block:Pagination}</div>
+</body>
